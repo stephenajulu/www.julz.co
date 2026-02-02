@@ -1,131 +1,70 @@
 ---
 title: Our Story
+subtitle: The Forge and The Collective.
 hide_title: false
 sections:
   - type: content_section
     content: >-
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus vel
-      venenatis augue. Suspendisse tincidunt, nibh eget sodales eleifend, lectus
-      magna elementum lorem, ut bibendum tellus turpis quis risus. Vivamus
-      sagittis enim est, et semper lectus hendrerit ut.
-
-
-      In sollicitudin imperdiet turpis quis accumsan. Pellentesque euismod
-      turpis et nisi fermentum accumsan.
-    image: images/about.jpg
-    image_alt: Our team in the meeting room
+      JULZ is the forge where imagination meets responsibility. We architect, build, and invest in sustainable products, brands, companies, startups, and infrastructures that empower humanity and unlock progress.<br><br>Founded by Stephen Ajulu, JULZ exists to transform raw ambition into enduring artifacts. Creations designed not just to solve problems, but to inspire, endure, and ripple across time.<br><br>Within JULZ, every venture is forged with clarity, empowerment, and responsibility. From consulting arms like Julz Insight to visionary projects and acquired brands, our portfolio reflects one purpose: to harmonize technology with nature and build foundations for a civilization worth living in.<br><br>At the heart of JULZ is The Collective, a multidisciplinary community of creators, engineers, designers, storytellers, and visionaries. Together, we co‑create one‑of‑a‑kind projects that transform society. Guided by curiosity, fueled by imagination, and grounded in responsibility, The Collective ensures that every artifact forged within JULZ carries both cultural resonance and enduring impact.<br><br><h3>Our Ethos</h3><br>**✔️ Curiosity Leads** — we explore boldly, guided by questions and possibilities.<br>**✔️ Imagination Fuels** — we draw inspiration from biblical, sci-fi, fantasy, and childhood wonders.<br>**✔️ Responsibility Grounds** — we honour our duty to God, the people, society, and earth.<br>**✔️ Transparency Defines** — we build openly, with clarity and trust.<br>**✔️ Progress Empowers** — we forge solutions that uplift humanity.<br><br><h3>Our Promise</h3><br>At JULZ, we believe in building things that matter. Every artifact we forge through the Forge, the Portfolio, and The Collective is designed to endure, inspire, and empower humanity’s next horizon.
+    image: images/julzbanner.png
+    image_alt: JULZ Marketing Banner Illuminating Possibilities
   - type: grid_section
     section_id: team
     title: The Team
-    subtitle: An optional subtitle of the section
     col_number: three
     grid_items:
-      - title: Gustav Purpleson
-        image: images/team-1.png
-        subtitle: 'Co-Founder, Creative Director'
-        content: >-
-          Pretium aenean pharetra magna ac placerat vestibulum. Imperdiet sed
-          euismod nisi porta lorem mollis.
+      - title: Stephen Ajulu
+        image: /images/1653516600275.jpg
+        subtitle: Founder, CEO, and CTO
+        content:
         actions:
           - label: Twitter
-            url: 'https://twitter.com/'
-            style: icon
-            icon: twitter
-            new_window: true
-      - title: Hilary Ouse
-        image: images/team-2.png
-        subtitle: 'Co-Founder, Creative Director'
-        content: >-
-          Dictum fusce ut placerat orci nulla pellentesque. Ipsum faucibus vitae
-          aliquet nec ullamcorper sit.
-        actions:
-          - label: Twitter
-            url: 'https://twitter.com/'
-            style: icon
-            icon: twitter
-            new_window: true
-      - title: Gordon Norman
-        image: images/team-3.png
-        subtitle: Creative Producer
-        content: >-
-          Interdum velit euismod in pellentesque massa placerat duis ultricies
-          lacus.
-        actions:
-          - label: Twitter
-            url: 'https://twitter.com/'
+            url: https://twitter.com/stephenajulu
             style: icon
             icon: twitter
             new_window: true
           - label: Instagram
-            url: 'https://www.instagram.com/'
+            url: https://instagram.com/stephenajulu
             style: icon
             icon: instagram
-            new_window: true
-      - title: Parsley Montana
-        image: images/team-4.png
-        subtitle: 'Senior Designer, Motion Graphics'
-        content: >-
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-          eiusmod tempor incididunt ut labore et dolore magna aliqua.
-        actions:
-          - label: Twitter
-            url: 'https://twitter.com/'
-            style: icon
-            icon: twitter
-            new_window: true
-          - label: Instagram
-            url: 'https://www.instagram.com/'
-            style: icon
-            icon: instagram
-            new_window: true
-      - title: Brandon Guidelines
-        image: images/team-5.png
-        subtitle: Graphic Designer
-        content: >-
-          Mattis ullamcorper velit sed ullamcorper morbi tincidunt ornare massa
-          eget.
-        actions:
-          - label: Twitter
-            url: 'https://twitter.com/'
-            style: icon
-            icon: twitter
             new_window: true
   - type: cta_section
     section_id: cta
-    title: Become a Team Player
-    content: >-
-      We are always looking for great people to join our team. If you are
-      interested in working for Agency, please send an email to
-      [email@example.com](mailto:email@example.com) with your CV and which
-      position you are interested in.
+    title: Ready to Build for Civilization?
+    content: Join the sovereign frontier. Whether you’re a founder, builder, strategist, brand, or company, JULZ is where artifacts are forged — not just imagined. Step beyond the noise and into the crucible of clarity, code, and covenant.
     image: images/cta-about.svg
-    image_alt: Illustration
-    bg_color: light
+    image_alt: An abstract shape for the call to action
+    bg_color: dark
+    actions:
+      - label: Step into the Forge →
+        url: /contact
+        style: button
 seo:
-  title: About Us
-  description: This is the about us page
+  title: About Us - JULZ - Sovereign Tech Forge Engineering Frontier Solutions
+  description: JULZ is a sovereign R&D forge building modular products, symbolic brands, and enduring solutions for the next civilization. Explore frontier solutions engineered for generational impact.
   extra:
-    - name: 'og:type'
+    - name: og:type
       value: website
       keyName: property
-    - name: 'og:title'
-      value: About Us
+    - name: og:title
+      value: About Us - JULZ - Sovereign Tech Forge Engineering Frontier Solutions
       keyName: property
-    - name: 'og:description'
-      value: This is the about us page
+    - name: og:description
+      value: JULZ is a sovereign R&D forge building modular products, symbolic brands, and enduring solutions for the next civilization. Explore frontier solutions engineered for generational impact.
       keyName: property
-    - name: 'og:image'
+    - name: og:image
       value: images/about.jpg
       keyName: property
       relativeUrl: true
-    - name: 'twitter:card'
+    - name: twitter:card
       value: summary_large_image
-    - name: 'twitter:title'
-      value: About Us
-    - name: 'twitter:description'
-      value: This is the about us page
-    - name: 'twitter:image'
+    - name: twitter:title
+      value: About Us - JULZ - Sovereign Tech Forge Engineering Frontier Solutions
+    - name: twitter:description
+      value: JULZ is a sovereign R&D forge building modular products, symbolic brands, and enduring solutions for the next civilization. Explore frontier solutions engineered for generational impact.
+    - name: twitter:image
       value: images/about.jpg
       relativeUrl: true
 layout: advanced
+
 ---
