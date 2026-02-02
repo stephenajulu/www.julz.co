@@ -5,10 +5,9 @@ sections:
   - type: hero_section
     section_id: hero
     title: >-
-      Sovereign, Scalable Infrastructure for Visionary Businesses
+      Forging Sovereign Artifacts for A Visionary Civilization.
     content: >-
-      **[Book a consultation →](/contact/)**
-  - type: portfolio_section
+      A frontier tech forge architecting, building, and investing in ventures that empower humanity, harmonize technology with nature, and ripple across time.
     section_id: latest-projects
     layout_style: tiles
     title:
@@ -20,8 +19,8 @@ sections:
     section_id: cta
     title: Let’s Work Together!
     content: >-
-      Say hello at [email@example.com](mailto:email@example.com) or tell us more
-      about your project by getting started below.
+      Say hello at [info@julz.co](mailto:alunje73@gmail.com) or tell us more 
+      below.
     actions:
       - label: Let's start
         url: /contact
@@ -30,29 +29,26 @@ sections:
     image_alt: Illustration
     bg_color: light
 seo:
-  title: Award Winning Agency Based in San Francisco
+  title: JULZ - Sovereign Tech Forge Engineering Frontier Solutions
   description: >-
-    We are a brand and design practice. We work closely with you, your team to
-    deliver inspiring work, which enables your organization to grow.
+    JULZ is a sovereign tech forge engineering impactful products, brands, and solutions for a sustainablility and expansion. Explore frontier solutions engineered for enduring impact.
   extra:
     - name: 'og:type'
       value: website
       keyName: property
     - name: 'og:title'
-      value: Award Winning Agency Based in San Francisco
+      value: JULZ - Sovereign Tech Forge Engineering Frontier Solutions
       keyName: property
     - name: 'og:description'
       value: >-
-        We are a brand and design practice. We work closely with you, your team
-        to deliver inspiring work, which enables your organization to grow.
+        JULZ is a sovereign tech forge engineering impactful products, brands, and solutions for a sustainablility and expansion. Explore frontier solutions engineered for enduring impact.
       keyName: property
     - name: 'twitter:card'
       value: summary
     - name: 'twitter:title'
-      value: Award Winning Agency Based in San Francisco
+      value: JULZ - Sovereign Tech Forge Engineering Frontier Solutions
     - name: 'twitter:description'
       value: >-
-        We are a brand and design practice. We work closely with you, your team
-        to deliver inspiring work, which enables your organization to grow.
+        JULZ is a sovereign tech forge engineering impactful products, brands, and solutions for a sustainablility and expansion. Explore frontier solutions engineered for enduring impact.
 layout: advanced
 ---
