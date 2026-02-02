@@ -6,8 +6,6 @@ sections:
     section_id: hero
     title: >-
       Forging Sovereign Artifacts for A Visionary Civilization.
-    content: >-
-      A frontier tech forge architecting, building, and investing in ventures that empower humanity, harmonize technology with nature, and ripple across time.
   - type: portfolio_section
     section_id: latest-projects
     layout_style: mosaic
@@ -16,6 +14,10 @@ sections:
     projects_number: 4
     view_all_label: View All
     view_all_url: portfolio
+  - type: hero_section
+    section_id: hero2
+    title: >-
+      A frontier tech forge architecting, building, and investing in ventures that empower humanity, harmonize technology with nature, and ripple across time.
   - type: cta_section
     section_id: cta
     title: Let’s Work Together!
