@@ -8,8 +8,9 @@ sections:
       Forging Sovereign Artifacts for A Visionary Civilization.
     content: >-
       A frontier tech forge architecting, building, and investing in ventures that empower humanity, harmonize technology with nature, and ripple across time.
-  - section_id: latest-projects
-    layout_style: tiles
+  - type: portfolio_section
+    section_id: latest-projects
+    layout_style: mosaic
     title:
     subtitle:
     projects_number: 6
