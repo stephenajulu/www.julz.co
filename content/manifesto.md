@@ -93,17 +93,18 @@ We are guided solely by these five principles:
 **Forge → Portfolio → Collective → Ethos → Civilization-Grade Impact**
 
 This is the cycle of JULZ:  
-- **Forge** creates,  
-- **Portfolio** sustains,  
-- **Collective** unites,  
-- **Ethos** guides,  
+- **Collective** unites,
+- **Forge** creates,
+- **Ethos** guides,
+- **Portfolio** sustains,
 - Together, they yield enduring impact.
 
 
 ```mermaid
-flowchart LR
-    A["THE FORGE (Build)"] --> B["THE PORTFOLIO (Hold)"]
-    B --> C["THE COLLECTIVE (Unite)"]
-    C --> D["OUR ETHOS (Guide)"]
+flowchart TB
+    C["THE COLLECTIVE (Unite)"] --> A["THE FORGE (Build)"]
+    A --> B["THE PORTFOLIO (Hold)"]
+    B --> D["OUR ETHOS (Guide)"]
     D --> E["Civilization-Grade Impact"]
-    E --> A
+    E --> C
+
