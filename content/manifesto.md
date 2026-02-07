@@ -28,7 +28,6 @@ seo:
 layout: page
 ---
 
-# ✨ THE JULZ MANIFESTO: Illuminating Possibilities
 **Version 1.1 | Founded by Stephen Ajulu**
 
 ---
