@@ -5,7 +5,7 @@ sections:
   - type: hero_section
     section_id: hero
     title: >-
-      Forging Sovereign Artifacts for A Visionary Civilization.
+      Forging Sovereign Technology for a Civilization Worth Living In.
   - type: portfolio_section
     section_id: latest-projects
     layout_style: mosaic
