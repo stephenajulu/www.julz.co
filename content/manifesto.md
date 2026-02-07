@@ -72,7 +72,7 @@ To responsibly transform imagination into reality, we operate through three pill
 
 ### III. THE COLLECTIVE (Unite)
 - Civilization is never built by one mind.  
-- A multidisciplinary guild of creators, engineers, storytellers, and visionaries.  
+- A multidisciplinary guild of creators, engineers, storytellers, strategists, and visionaries.  
 - A union where the *best of the best* co-create projects no corporation would dare attempt.
 
 ---
@@ -92,19 +92,20 @@ We are guided solely by these five principles:
 ## 🌀 Formula of JULZ
 **Forge → Portfolio → Collective → Ethos → Civilization-Grade Impact**
 
-This is the cycle of JULZ:  
-- **Collective** unites,
-- **Forge** creates,
+This is the cycle of JULZ:
 - **Ethos** guides,
+- **Collective** unites,
+- **Forge** executes,
 - **Portfolio** sustains,
 - Together, they yield enduring impact.
 
 
 ```mermaid
 flowchart TB
-    C["THE COLLECTIVE (Unite)"] --> A["THE FORGE (Build)"]
+    D["OUR ETHOS (Guide)"] --> C["THE COLLECTIVE (Unite)"]
+    C --> A["THE FORGE (Build)"]
     A --> B["THE PORTFOLIO (Hold)"]
-    B --> D["OUR ETHOS (Guide)"]
-    D --> E["Civilization-Grade Impact"]
-    E --> C
+    B --> E["Civilization-Grade Impact"]
+    E --> D
+
 
