@@ -44,11 +44,11 @@
           {{ partial "header.html" . }}
           <main id="content" class="site-content">
             {{ block "content" . }}{{ end }}
-              {{ partial "mermaid.html" . }}
           </main>
           {{ partial "footer.html" . }}
         </div>
         <script src="{{ "js/init.js" | relURL }}"></script>
         <script src="{{ "js/page-load.js" | relURL }}"></script>
+        {{ partial "mermaid.html" . }}
     </body> 
 </html>
