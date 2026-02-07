@@ -102,8 +102,8 @@ This is the cycle of JULZ:
 
 ```mermaid
 flowchart LR
-    A[THE FORGE (Build)] --> B[THE PORTFOLIO (Hold)]
-    B --> C[THE COLLECTIVE (Unite)]
-    C --> D[OUR ETHOS (Guide)]
-    D --> E[Civilization-Grade Impact]
+    A["THE FORGE (Build)"] --> B["THE PORTFOLIO (Hold)"]
+    B --> C["THE COLLECTIVE (Unite)"]
+    C --> D["OUR ETHOS (Guide)"]
+    D --> E["Civilization-Grade Impact"]
     E --> A
