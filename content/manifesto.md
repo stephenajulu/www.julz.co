@@ -103,7 +103,7 @@ This creates a **circular flow** showing how Forge → Portfolio → Collective 
 
 ---
 
-### 🔗 ASCII Hierarchy (Fallback)
+### 🔗 ASCII Hierarchy
 
 ```markdown
 FORGE (Build)
