@@ -3,6 +3,7 @@ title: The JULZ Manifesto
 subtitle: >-
   Illuminating Possibilities — A Sovereign Tech Forge vision for harmonizing
   technology and nature.
+mermaid: true
 seo:
   title: The JULZ Manifesto | JULZ Sovereign Tech Forge
   description: >-
@@ -99,23 +100,10 @@ This is the cycle of JULZ:
 - Together, they yield enduring impact.
 
 
-This creates a **circular flow** showing how Forge → Portfolio → Collective → Ethos → Impact loops back into Forge.
-
----
-
-### 🔗 ASCII Hierarchy
-
-```markdown
-FORGE (Build)
-   ↓
-PORTFOLIO (Hold)
-   ↓
-COLLECTIVE (Unite)
-   ↓
-ETHOS (Guide)
-   ↓
-CIVILIZATION-GRADE IMPACT
-   ↺ (loops back to FORGE)
-
-
----
+```mermaid
+flowchart LR
+    A[THE FORGE (Build)] --> B[THE PORTFOLIO (Hold)]
+    B --> C[THE COLLECTIVE (Unite)]
+    C --> D[OUR ETHOS (Guide)]
+    D --> E[Civilization-Grade Impact]
+    E --> A
