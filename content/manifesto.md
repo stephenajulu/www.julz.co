@@ -98,12 +98,24 @@ This is the cycle of JULZ:
 - **Ethos** guides,  
 - Together, they yield enduring impact.
 
-```mermaid
-flowchart LR
-    A[THE FORGE (Build)] --> B[THE PORTFOLIO (Hold)]
-    B --> C[THE COLLECTIVE (Unite)]
-    C --> D[OUR ETHOS (Guide)]
-    D --> E[Civilization-Grade Impact]
-    E --> A
+
+This creates a **circular flow** showing how Forge → Portfolio → Collective → Ethos → Impact loops back into Forge.
+
+---
+
+### 🔗 ASCII Hierarchy (Fallback)
+
+```markdown
+FORGE (Build)
+   ↓
+PORTFOLIO (Hold)
+   ↓
+COLLECTIVE (Unite)
+   ↓
+ETHOS (Guide)
+   ↓
+CIVILIZATION-GRADE IMPACT
+   ↺ (loops back to FORGE)
+
 
 ---
