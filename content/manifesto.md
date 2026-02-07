@@ -93,10 +93,11 @@ We are guided solely by these five principles:
 **Forge → Portfolio → Collective → Ethos → Civilization-Grade Impact**
 
 This is the cycle of JULZ:
-- **Ethos** guides,
-- **Collective** unites,
-- **Forge** executes,
-- **Portfolio** sustains,
+- **Ethos** ***(guides)*** - Principles come first. They define why and how we build.
+- **Collective** ***(unites)*** - Guided by ethos, the guild assembles.
+- **Forge** ***(executes)*** - With shared vision, the guild creates.
+- **Portfolio** ***(holds & grows)*** - Creations are sustained, refined and grown.
+- **Civilization-Grade Impact** - The outcome loops back, reinforcing the ethos.
 - Together, they yield enduring impact.
 
 
