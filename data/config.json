@@ -1,12 +1,12 @@
 {
-    "title": "Julz Insight",
+    "title": "JULZ",
     "color_scheme": "light",
     "accent_color": "violet",
     "base_font": "fraunces",
     "header": {
-        "title": "Julz Insight",
+        "title": "JULZ",
         "logo": "images/logo.svg",
-        "logo_alt": "Julz Insight Logo",
+        "logo_alt": "JULZ Logo",
         "has_nav": true,
         "nav_links": [
             {
@@ -15,18 +15,23 @@
                 "style": "link"
             },
             {
-                "label": "Case Studies",
+                "label": "About",
+                "url": "/about/",
+                "style": "link"
+            },
+            {
+                "label": "Manifesto",
+                "url": "/manifesto/",
+                "style": "link"
+            },
+            {
+                "label": "Portfolio",
                 "url": "/portfolio/",
                 "style": "link"
             },
             {
                 "label": "Insight",
                 "url": "/blog/",
-                "style": "link"
-            },
-            {
-                "label": "About",
-                "url": "/about/",
                 "style": "link"
             },
             {
@@ -37,26 +42,26 @@
         ]
     },
     "footer": {
-        "content": "&copy; Julz Insight. All rights reserved",
+        "content": "&copy; JULZ. All rights reserved",
         "has_social": true,
         "social_links": [
             {
                 "label": "Twitter",
-                "url": "https://x.com/julzinsight",
+                "url": "https://x.com/julz",
                 "style": "icon",
                 "icon": "twitter",
                 "new_window": true
             },
             {
                 "label": "Instagram",
-                "url": "https://www.instagram.com/julzinsight",
+                "url": "https://www.instagram.com/julz",
                 "style": "icon",
                 "icon": "instagram",
                 "new_window": true
             },
             {
                 "label": "LinkedIn",
-                "url": "https://www.linkedin.com/julzinsight",
+                "url": "https://www.linkedin.com/julz",
                 "style": "icon",
                 "icon": "linkedin",
                 "new_window": true
