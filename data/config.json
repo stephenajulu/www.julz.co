@@ -26,6 +26,11 @@
                 "style": "link"
             },
             {
+                "label": "The Collective",
+                "url": "/about/",
+                "style": "link"
+            },
+            {
                 "label": "Insights",
                 "url": "/blog/",
                 "style": "link"
