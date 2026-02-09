@@ -1,6 +1,6 @@
 ---
 title: Our Story
-subtitle: The Forge. The PoThe Collective. The Ethos.
+subtitle: The Forge. The Collective. The Ethos.
 hide_title: false
 sections:
   - type: content_section
