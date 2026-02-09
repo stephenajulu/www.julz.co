@@ -15,9 +15,7 @@ sections:
         image: /images/1653516600275.jpg
         subtitle: Founder and CEO
         content: >-
-          Stephen Ajulu is a visionary systems builder, technologiest and brand strategist, founder and CEO of JULZ. With a background in ICT and digital transformation, he has crafted JULZ into a multidisciplinary venture that fuses technology, design, and philosophy. Stephen thrives on pattern recognition, modular branding, systems and AI-augmented workflows, always guided by an ethos of sovereignty and enduring impact.
-
-At JULZ, he channels his ability to envision infrastructures and ventures in intricate detail while creating environments where teams can thrive. His mission is clear: to build sovereign systems and collective guilds that empower communities to co-create civilization‑grade projects.
+          Stephen Ajulu is a visionary systems builder, technologiest and brand strategist, founder and CEO of JULZ. With a background in ICT and digital transformation, he has crafted JULZ into a multidisciplinary venture that fuses technology, design, and philosophy. Stephen thrives on pattern recognition, modular branding, systems and AI-augmented workflows, always guided by an ethos of sovereignty and enduring impact. <br><br>At JULZ, he channels his ability to envision infrastructures and ventures in intricate detail while creating environments where teams can thrive. His mission is clear: to build sovereign systems and collective guilds that empower communities to co-create civilization‑grade projects.
         actions:
           - label: Twitter
             url: https://twitter.com/stephenajulu
