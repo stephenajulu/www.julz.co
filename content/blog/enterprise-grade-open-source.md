@@ -6,9 +6,9 @@ excerpt: >-
   businesses with flexibility, sovereignty, and scalability. Julz Insight
   delivers this as Africa’s Digital Sovereignty Engine.
 date: '2026-02-09'
-thumb_image: images/post-julz-insight.jpg
+thumb_image: images/post-julz-insight.png
 thumb_image_alt: Abstract mesh gradient background with Julz Insight logo overlay
-image: images/post-julz-insight.jpg
+image: images/post-julz-insight.png
 image_alt: Futuristic African digital grid background
 seo:
   title: Enterprise-Grade Open Source
@@ -29,7 +29,7 @@ seo:
         sovereignty.
       keyName: property
     - name: 'og:image'
-      value: images/post-julz-insight.jpg
+      value: images/post-julz-insight.png
       keyName: property
       relativeUrl: true
     - name: 'twitter:card'
@@ -42,7 +42,7 @@ seo:
         enterprises, and how Julz Insight is enabling Africa’s digital
         sovereignty.
     - name: 'twitter:image'
-      value: images/post-julz-insight.jpg
+      value: images/post-julz-insight.png
       relativeUrl: true
 layout: post
 ---
