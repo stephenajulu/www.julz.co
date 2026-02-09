@@ -3,6 +3,7 @@
     "color_scheme": "light",
     "accent_color": "blue",
     "base_font": "fraunces",
+    "favicon": "images/favicon.png",
     "header": {
         "title": "JULZ",
         "logo": "images/logo.svg",
