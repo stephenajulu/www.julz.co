@@ -1,74 +1,86 @@
 ---
-title: Subtle
-subtitle: Brand Development
-date: '2021-02-06'
-thumb_image: images/work-photography-magazine-1-thumb.jpg
-thumb_image_alt: Subtle preview
+title: Julz Insight
+subtitle: Africa's Digital Sovereignty Engine
+date: '2026-02-09'
+thumb_image: images/work-julz-insight-thumb.png
+thumb_image_alt: Julz Insight preview
 sections:
   - type: image_section
-    image: images/work-photography-magazine-1.jpg
-    image_alt: Subtle 1
-    caption: This is the caption of the image
+    image: images/work-julz-insight-hero.png
+    image_alt: Julz Insight Hero
+    caption: Africa’s Digital Sovereignty Engine
     width: wide
   - type: text_section
     content: >-
-      Vis accumsan feugiat adipiscing nisl amet adipiscing accumsan blandit
-      accumsan sapien blandit ac amet faucibus aliquet placerat commodo.
-      Interdum ante aliquet commodo accumsan vis phasellus adipiscing. Ornare a
-      in lacinia. Vestibulum accumsan ac metus massa tempor. Accumsan in lacinia
-      ornare massa amet. Ac interdum ac non praesent. Cubilia lacinia interdum
-      massa faucibus blandit nullam. Accumsan phasellus nunc integer. Accumsan
-      euismod nunc adipiscing lacinia erat ut sit. Arcu amet. Id massa aliquet
-      arcu accumsan lorem amet accumsan.
+      Julz Insight is the first subsidiary of JULZ, designed to be Africa’s
+      Digital Sovereignty Engine. It provides Managed Open Source Business
+      Infrastructure—enterprise-grade systems that empower organizations to
+      operate independently of foreign-controlled platforms. This ensures
+      African businesses, governments, and institutions can build, scale, and
+      secure their digital operations without sacrificing autonomy.
   - type: image_section
-    image: images/work-photography-magazine-2.jpg
-    image_alt: Subtle 2
+    image: images/work-julz-insight-problem.png
+    image_alt: Julz Insight Problem
+    caption: Breaking dependency on proprietary systems
     width: wide
   - type: text_section
     content: >-
-      Amet nibh adipiscing adipiscing. Commodo ante vis placerat interdum massa
-      massa primis. Tempus condimentum tempus non ac varius cubilia adipiscing
-      placerat lorem turpis at. Aliquet lorem porttitor interdum. Amet lacus.
-      Aliquam lobortis faucibus blandit ac phasellus.
+      Africa’s digital landscape is heavily reliant on imported, proprietary
+      technologies. This dependency creates vulnerabilities: data sovereignty
+      risks where sensitive information is stored offshore, high licensing costs
+      that stifle innovation, and limited adaptability since proprietary systems
+      often fail to reflect local needs and realities.
   - type: image_section
-    image: images/work-photography-magazine-3.jpg
-    image_alt: Subtle 3
+    image: images/work-julz-insight-solution.png
+    image_alt: Julz Insight Solution
+    caption: Managed Open Source Infrastructure
     width: wide
   - type: text_section
     content: >-
-      Vis accumsan feugiat adipiscing nisl amet adipiscing accumsan blandit
-      accumsan sapien blandit ac amet faucibus aliquet placerat commodo.
-      Interdum ante aliquet commodo accumsan vis phasellus adipiscing. Ornare a
-      in lacinia. Vestibulum accumsan ac metus massa tempor. Accumsan in lacinia
-      ornare massa amet. Ac interdum ac non praesent. Cubilia lacinia interdum
-      massa faucibus blandit nullam. Accumsan phasellus nunc integer. Accumsan
-      euismod nunc adipiscing lacinia erat ut sit. Arcu amet. Id massa aliquet
-      arcu accumsan lorem amet accumsan.
+      Julz Insight tackles these challenges by deploying managed open-source
+      stacks for cloud, collaboration, and enterprise resource planning.
+      Supporting hybrid and on-prem infrastructures ensures flexibility and
+      compliance with local regulations. Modular systems scale with
+      organizations, from startups to national institutions, while training and
+      support ecosystems empower African talent to maintain and evolve these
+      infrastructures.
+  - type: image_section
+    image: images/work-julz-insight-overview.png
+    image_alt: Julz Insight Overview
+    caption: Sovereign, scalable, and future-ready
+    width: wide
+  - type: text_section
+    content: >-
+      Julz Insight is more than a tech provider—it’s a sovereignty enabler. By
+      harmonizing open-source innovation with African realities, it ensures that
+      digital infrastructures are affordable, secure, and locally governed. This
+      positions Africa not just as a consumer of technology, but as a creator of
+      sovereign digital futures.
 seo:
-  title: Subtle
-  description: This is the sample project description
+  title: Julz Insight
+  description: Julz Insight is Africa’s Digital Sovereignty Engine, offering Managed Open Source Business Infrastructure to empower organizations with secure, scalable, and locally governed digital systems.
   extra:
     - name: 'og:type'
       value: website
       keyName: property
     - name: 'og:title'
-      value: Subtle
+      value: Julz Insight
       keyName: property
     - name: 'og:description'
-      value: This is the sample project description
+      value: Julz Insight is Africa’s Digital Sovereignty Engine, offering Managed Open Source Business Infrastructure to empower organizations with secure, scalable, and locally governed digital systems.
       keyName: property
     - name: 'og:image'
-      value: images/work-photography-magazine-1.jpg
+      value: images/work-julz-insight-thumb.png
       keyName: property
       relativeUrl: true
     - name: 'twitter:card'
       value: summary_large_image
     - name: 'twitter:title'
-      value: Subtle
+      value: Julz Insight
     - name: 'twitter:description'
-      value: This is the sample project description
+      value: Julz Insight is Africa’s Digital Sovereignty Engine, offering Managed Open Source Business Infrastructure to empower organizations with secure, scalable, and locally governed digital systems.
     - name: 'twitter:image'
-      value: images/work-photography-magazine-1.jpg
+      value: images/work-julz-insight-thumb.png
       relativeUrl: true
 layout: project
 ---
