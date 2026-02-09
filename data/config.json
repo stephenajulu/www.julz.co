@@ -16,22 +16,17 @@
                 "style": "link"
             },
             {
-                "label": "About",
-                "url": "/about/",
-                "style": "link"
-            },
-            {
-                "label": "Manifesto",
+                "label": "The Manifesto",
                 "url": "/manifesto/",
                 "style": "link"
             },
             {
-                "label": "Portfolio",
+                "label": "The Portfolio",
                 "url": "/portfolio/",
                 "style": "link"
             },
             {
-                "label": "Insight",
+                "label": "Insights",
                 "url": "/blog/",
                 "style": "link"
             },
