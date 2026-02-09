@@ -23,12 +23,14 @@ sections:
         is_required: true
       - input_type: select
         name: subject
-        label: What services are you looking for?
+        label: What are you looking for?
         default_value: Please select
         options:
           - The Forge
           - The Collective
           - The Portfolio
+          - Projects
+          - Investment
           - Careers
           - Other
       - input_type: textarea
