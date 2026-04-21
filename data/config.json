@@ -16,12 +16,12 @@
                 "style": "link"
             },
             {
-                "label": "The Manifesto",
+                "label": "Manifesto",
                 "url": "/manifesto/",
                 "style": "link"
             },
             {
-                "label": "The Portfolio",
+                "label": "Portfolio",
                 "url": "/portfolio/",
                 "style": "link"
             },
@@ -31,7 +31,7 @@
                 "style": "link"
             },
             {
-                "label": "The Insights",
+                "label": "Insights",
                 "url": "/blog/",
                 "style": "link"
             },
