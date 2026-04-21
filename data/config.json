@@ -3,7 +3,7 @@
     "color_scheme": "dark",
     "accent_color": "violet",
     "base_font": "fraunces",
-    "favicon": "images/favicon.png",
+    "favicon": "images/logo.svg",
     "header": {
         "title": "JULZ",
         "logo": "images/logo.svg",
@@ -13,16 +13,6 @@
             {
                 "label": "Home",
                 "url": "/",
-                "style": "link"
-            },
-            {
-                "label": "Manifesto",
-                "url": "/manifesto/",
-                "style": "link"
-            },
-            {
-                "label": "Portfolio",
-                "url": "/portfolio/",
                 "style": "link"
             },
             {
