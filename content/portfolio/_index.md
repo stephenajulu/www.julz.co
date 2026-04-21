@@ -1,6 +1,6 @@
 ---
 title: The Portfolio
-layout_style: mosaic
+layout_style: tiles
 seo:
   title: The Portfolio | Julz
   description: This is the portfolio page
