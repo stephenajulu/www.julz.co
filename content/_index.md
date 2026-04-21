@@ -5,7 +5,7 @@ sections:
   - type: hero_section
     section_id: hero
     title: >-
-      We are an independent research, design, and development forge building impactful products, brands, and solutions.
+      We are an independent R&D forge building impactful products, brands, experiences, and solutions.
   - type: portfolio_section
     section_id: latest-projects
     layout_style: tiles
