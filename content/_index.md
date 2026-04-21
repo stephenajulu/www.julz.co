@@ -5,32 +5,32 @@ sections:
   - type: hero_section
     section_id: hero
     title: >-
-      We are an independent R&D forge building impactful products, brands, experiences, and solutions.
+      We are a sovereign R&D forge building impactful products, brands, experiences, and solutions.
   - type: portfolio_section
     section_id: latest-projects
     layout_style: tiles
     projects_number: 4
 seo:
-  title: JULZ - Sovereign Tech Forge Engineering Frontier Solutions
+  title: JULZ - Sovereign R&D Forge
   description: >-
-    JULZ is a sovereign tech forge engineering impactful products, brands, and solutions for sustainability and expansion. Explore frontier solutions engineered for enduring impact.
+    JULZ is a sovereign R&D forge building impactful products, brands, experiences, and solutions for sustainability and expansion. Explore frontier solutions engineered for enduring impact.
   extra:
     - name: 'og:type'
       value: website
       keyName: property
     - name: 'og:title'
-      value: JULZ - Sovereign Tech Forge Engineering Frontier Solutions
+      value: JULZ - Sovereign R&D Forge
       keyName: property
     - name: 'og:description'
       value: >-
-        JULZ is a sovereign tech forge engineering impactful products, brands, and solutions for a sustainablility and expansion. Explore frontier solutions engineered for enduring impact.
+        JULZ is a sovereign R&D forge building impactful products, brands, experiences, and solutions for sustainability and expansion. Explore frontier solutions engineered for enduring impact.
       keyName: property
     - name: 'twitter:card'
       value: summary
     - name: 'twitter:title'
-      value: JULZ - Sovereign Tech Forge Engineering Frontier Solutions
+      value: JULZ - Sovereign R&D Forge
     - name: 'twitter:description'
       value: >-
-        JULZ is a sovereign tech forge engineering impactful products, brands, and solutions for a sustainablility and expansion. Explore frontier solutions engineered for enduring impact.
+        JULZ is a sovereign R&D forge building impactful products, brands, experiences, and solutions for sustainability and expansion. Explore frontier solutions engineered for enduring impact.
 layout: advanced
 ---
