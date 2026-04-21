@@ -8,12 +8,12 @@ sections:
       We are an independent R&D forge building impactful products, brands, and solutions.
   - type: portfolio_section
     section_id: latest-projects
-    layout_style: mosaic
+    layout_style: tiles
     projects_number: 4
 seo:
   title: JULZ - Sovereign Tech Forge Engineering Frontier Solutions
   description: >-
-    JULZ is a sovereign tech forge engineering impactful products, brands, and solutions for a sustainablility and expansion. Explore frontier solutions engineered for enduring impact.
+    JULZ is a sovereign tech forge engineering impactful products, brands, and solutions for sustainability and expansion. Explore frontier solutions engineered for enduring impact.
   extra:
     - name: 'og:type'
       value: website
