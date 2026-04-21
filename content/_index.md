@@ -5,28 +5,7 @@ sections:
   - type: hero_section
     section_id: hero
     title: >-
-      Forging Sovereign Technology for a Civilization Worth Living In.
-  - type: portfolio_section
-    section_id: latest-projects
-    layout_style: mosaic
-    title:
-    subtitle:
-    projects_number: 4
-    view_all_label: View All
-    view_all_url: portfolio
-  - type: cta_section
-    section_id: cta
-    title: Let’s Work Together!
-    content: >-
-      Say hello at [info@julz.co](mailto:alunje73@gmail.com) or tell us more 
-      below.
-    actions:
-      - label: Let's start
-        url: /contact
-        style: button
-    image: images/cta.svg
-    image_alt: Illustration
-    bg_color: light
+      We are an independent R&D forge building impactful products, brands, and solutions.
 seo:
   title: JULZ - Sovereign Tech Forge Engineering Frontier Solutions
   description: >-
