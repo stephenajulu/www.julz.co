@@ -6,6 +6,10 @@ sections:
     section_id: hero
     title: >-
       We are an independent R&D forge building impactful products, brands, and solutions.
+  - type: portfolio_section
+    section_id: latest-projects
+    layout_style: mosaic
+    projects_number: 4
 seo:
   title: JULZ - Sovereign Tech Forge Engineering Frontier Solutions
   description: >-
