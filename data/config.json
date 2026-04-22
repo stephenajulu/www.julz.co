@@ -3,7 +3,7 @@
     "color_scheme": "dark",
     "accent_color": "violet",
     "base_font": "fraunces",
-    "favicon": "images/logo.svg",
+    "favicon": "images/favicon.png",
     "header": {
         "title": "JULZ",
         "logo": "images/logo.svg",
@@ -26,7 +26,7 @@
                 "style": "link"
             },
             {
-                "label": "Contact",
+                "label": "Get In Touch",
                 "url": "/contact/",
                 "style": "button"
             }
@@ -42,21 +42,6 @@
                 "style": "icon",
                 "icon": "twitter",
                 "new_window": true
-            },
-            {
-                "label": "Instagram",
-                "url": "https://www.instagram.com/julz",
-                "style": "icon",
-                "icon": "instagram",
-                "new_window": true
-            },
-            {
-                "label": "LinkedIn",
-                "url": "https://www.linkedin.com/julz",
-                "style": "icon",
-                "icon": "linkedin",
-                "new_window": true
             }
-        ]
     }
 }
