@@ -26,7 +26,7 @@
                 "style": "link"
             },
             {
-                "label": "Get In Touch",
+                "label": "Contact",
                 "url": "/contact/",
                 "style": "button"
             }
@@ -42,6 +42,21 @@
                 "style": "icon",
                 "icon": "twitter",
                 "new_window": true
+            },
+            {
+                "label": "Instagram",
+                "url": "https://www.instagram.com/julz",
+                "style": "icon",
+                "icon": "instagram",
+                "new_window": true
+            },
+            {
+                "label": "LinkedIn",
+                "url": "https://www.linkedin.com/julz",
+                "style": "icon",
+                "icon": "linkedin",
+                "new_window": true
             }
+        ]
     }
 }
