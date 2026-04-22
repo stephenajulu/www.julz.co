@@ -56,7 +56,8 @@
 
   &__item--current,
   a:not(.button):hover {
-    color: $color-accent;
+    color: $color-gray-500;
+    font-weight:bold;
   }
 }
 
