@@ -5,7 +5,7 @@ sections:
   - type: hero_section
     section_id: hero
     title: >-
-      We are a sovereign R&D forge crafting impactful products, brands, and solutions at the intersection of technology, engineering, design, and business.
+      We are a sovereign R&D tech forge crafting impactful solutions at the intersection of technology, engineering, and design.
   - type: portfolio_section
     section_id: latest-projects
     layout_style: tiles
