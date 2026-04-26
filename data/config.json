@@ -21,6 +21,11 @@
                 "style": "link"
             },
             {
+                "label": "Portfolio",
+                "url": "/portfolio/", 
+                "style": "link"
+            }, 
+            {
                 "label": "Insights",
                 "url": "/blog/",
                 "style": "link"
@@ -28,7 +33,7 @@
             {
                 "label": "Contact",
                 "url": "/contact/",
-                "style": "button"
+                "style": "link"
             }
         ]
     },
@@ -41,20 +46,6 @@
                 "url": "https://x.com/julz",
                 "style": "icon",
                 "icon": "twitter",
-                "new_window": true
-            },
-            {
-                "label": "Instagram",
-                "url": "https://www.instagram.com/julz",
-                "style": "icon",
-                "icon": "instagram",
-                "new_window": true
-            },
-            {
-                "label": "LinkedIn",
-                "url": "https://www.linkedin.com/julz",
-                "style": "icon",
-                "icon": "linkedin",
                 "new_window": true
             }
         ]
