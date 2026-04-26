@@ -6,10 +6,6 @@ sections:
     section_id: hero
     title: >-
       We are a sovereign R&D forge building impactful products and solutions. 
-  - type: portfolio_section
-    section_id: latest-projects
-    layout_style: tiles
-    projects_number: 4
 seo:
   title: JULZ - Sovereign R&D Forge
   description: >-
