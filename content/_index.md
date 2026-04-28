@@ -5,7 +5,7 @@ sections:
   - type: hero_section
     section_id: hero
     title: >-
-      We are a sovereign R&D forge building impactful products and solutions. 
+      We are a sovereign R&D tech forge building impactful products and solutions. 
 seo:
   title: JULZ - Sovereign R&D Forge
   description: >-
