@@ -5,28 +5,28 @@ sections:
   - type: hero_section
     section_id: hero
     title: >-
-      We are a sovereign R&D tech forge building impactful products and solutions. 
+      We are a sovereign tech firm building impactful products, brands, and solutions. 
 seo:
-  title: JULZ - Sovereign R&D Forge
+  title: JULZ - Sovereign Tech Firm
   description: >-
-    JULZ is a sovereign R&D forge building impactful products, brands, experiences, and solutions for sustainability and expansion. Explore frontier solutions engineered for enduring impact.
+    JULZ is a sovereign Tech firm building impactful products, brands, experiences, and solutions for sustainability and expansion. Explore frontier solutions engineered for enduring impact.
   extra:
     - name: 'og:type'
       value: website
       keyName: property
     - name: 'og:title'
-      value: JULZ - Sovereign R&D Forge
+      value: JULZ - Sovereign Tech Firm
       keyName: property
     - name: 'og:description'
       value: >-
-        JULZ is a sovereign R&D forge building impactful products, brands, experiences, and solutions for sustainability and expansion. Explore frontier solutions engineered for enduring impact.
+        JULZ is a sovereign Tech firm building impactful products, brands, experiences, and solutions for sustainability and expansion. Explore frontier solutions engineered for enduring impact.
       keyName: property
     - name: 'twitter:card'
       value: summary
     - name: 'twitter:title'
-      value: JULZ - Sovereign R&D Forge
+      value: JULZ - Sovereign Tech Firm
     - name: 'twitter:description'
       value: >-
-        JULZ is a sovereign R&D forge building impactful products, brands, experiences, and solutions for sustainability and expansion. Explore frontier solutions engineered for enduring impact.
+        JULZ is a sovereign Tech firm building impactful products, brands, experiences, and solutions for sustainability and expansion. Explore frontier solutions engineered for enduring impact.
 layout: advanced
 ---
