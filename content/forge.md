@@ -10,7 +10,7 @@ sections:
     class: hero-full-center
     content: |
       <div class="tagline">The Crucible of Creation</div>
-      The R&D laboratory where imagination meets physical and digital engineering. We research and prototype software systems, physical devices, autonomous hardware, and ecological frameworks to merge technology with nature.
+      I built this R&D laboratory to merge digital code with physical hardware. We prototype software, quiet server enclosures, autonomous systems, and skeletal structures. Our goal is simple: engineer tools that respect human focus and ecological health.
   - type: grid_section
     section_id: forge-tools
     title: Tools in the Forge
@@ -65,24 +65,24 @@ sections:
     subtitle: Feasible, step-by-step phases mapping our development path
     col_number: three
     grid_items:
-      - title: "Phase 1: Sovereignty (Years 1–10)"
+      - title: "Phase 1: Sovereignty (Years 1-10)"
         subtitle: Base Infrastructures & Labs
         content: |
-          * **Focus:** Digital independence and maker space prototyping.
-          * **Builds:** Open-source business software (Julz Insight), local AI databases, basic homelabs, solar battery arrays, and local 3D-printing fabricators.
-          * **Outcome:** Secure our digital footing and build the tools to fabricate Phase 2.
-      - title: "Phase 2: Autonomy (Years 11–20)"
+          * focusing on digital independence and maker space prototyping
+          * building open-source business software, local AI databases, basic homelabs, and local 3D fabricators
+          * securing our digital footing to fabricate the tools needed for physical automation
+      - title: "Phase 2: Autonomy (Years 11-20)"
         subtitle: Physical Automation & Mobiles
         content: |
-          * **Focus:** Decentralized mobility, local farming networks, and robotics.
-          * **Builds:** Fractal e-bikes, smart desalination water systems, living systems agriculture nodes, micro-factory manufacturing, and adaptive AI helper bots.
-          * **Outcome:** Establish food, water, and mobility sovereignty for localized networks.
-      - title: "Phase 3: Integration (Years 21–30)"
+          * focusing on decentralized mobility, local farming networks, and robotics
+          * building fractal e-bikes, smart desalination water systems, living system agriculture nodes, and micro-factories
+          * establishing food, water, and mobility sovereignty for localized networks
+      - title: "Phase 3: Integration (Years 21-30)"
         subtitle: Biophilic Synthesis & Interfaces
         content: |
-          * **Focus:** Neural overlays, cyber-resilient cities, and rewilding.
-          * **Builds:** Non-invasive neural interfaces, cybernetic prosthetics, tropical brutalist structures, and mineral-backed ecological currencies.
-          * **Outcome:** Fusing biology and cybernetics into self-sustaining habitats.
+          * focusing on neural overlays, cyber-resilient cities, and rewilding
+          * building non-invasive neural interfaces, cybernetic prosthetics, and tropical brutalist structures
+          * fusing biology and cybernetics into self-sustaining habitats
   - type: cta_section
     section_id: collaborate-forge
     title: Submit a Prototyping Concept

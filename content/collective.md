@@ -10,7 +10,7 @@ sections:
     class: hero-full-center
     content: |
       <div class="tagline">Sovereign Guild & Visionary Union</div>
-      JULZ is a sovereign R&D forge, venture holding, and multidisciplinary guild. Guided by a covenant design philosophy, we co-create digital and physical artifacts. We build code, compile algorithms, and hammer hardware designed to inspire, empower, and outlast the noise of legacy monopolies.
+      JULZ is a sovereign R&D forge, venture holding, and multidisciplinary guild. I built this on a covenant design philosophy to co-create digital and physical tools. We build code, compile local algorithms, and hammer silent hardware. No trackers. No corporate leases. Only artifacts designed to endure.
       <br><br>
       *Note: Currently chartered and executed by a singular polymath engineer, Stephen Ajulu, assembling the technical blueprints for a future decentralized network of tactical builder squads.*
   - type: grid_section
@@ -53,7 +53,7 @@ sections:
         image: /images/1653516600275.jpg
         subtitle: Visionary Architect & Founder
         content: |
-          Polymath engineer, technologiest and brand strategist. Stephen handles pattern recognition, AI workflows, and hardware prototyping. He is currently executing the early blueprints of JULZ from Kenya.
+          Polymath engineer, technologist and brand strategist. Stephen handles pattern recognition, AI workflows, and hardware prototyping. He is currently executing the early blueprints of JULZ from Kenya.
         actions:
           - label: Twitter
             url: https://twitter.com/stephenajulu

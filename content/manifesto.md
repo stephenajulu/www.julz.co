@@ -1,6 +1,6 @@
 ---
 title: The JULZ Manifesto
-subtitle: Illuminating Possibilities — A Sovereign Tech Forge Vision
+subtitle: "Illuminating Possibilities: A Sovereign Tech Forge Vision"
 mermaid: true
 layout: advanced
 hide_title: true
@@ -12,7 +12,7 @@ sections:
     content: |
       <div class="tagline">Version 2.0 | Chartered by Stephen Ajulu</div>
       <h2>A Covenant for the Next Technical Horizon</h2>
-      We stand at the end of an era of digital extraction. Technology was promised as a tool of human liberation, yet it has become a system of enclosure—renting us our intelligence, tracking our attention, and detaching us from the biological rhythms of the Earth. 
+      We stand at the end of an era of digital extraction. Technology was promised as a tool of human liberation. Instead, it became a system of enclosure. It rents us our intelligence, tracks our attention, and detaches us from the biological rhythms of the Earth.
       <br><br>
       **JULZ exists to forge the alternative.** We build digital and physical artifacts designed for autonomy, biophilic harmony, and intergenerational endurance.
   - type: grid_section
@@ -24,19 +24,19 @@ sections:
       - title: What We Reject
         subtitle: The Paradigm of Extraction
         content: |
-          * ❌ **Centralized Cloud Enclosures:** Rented databases, high-latency trunk lines, and remote servers governed by distant monopolies.
-          * ❌ **Rented Cognitive Tools:** Total dependency on corporate LLMs that mine user context for proprietary gain.
-          * ❌ **Attention Exploitation:** Feeds engineered to trigger dopamine loops, exploiting human psychology for advertising slots.
-          * ❌ **Planned Obsolescence:** Software and hardware designed to degrade, forcing waste upon the Earth and costs upon the user.
-          * ❌ **Venture-Capital Speeds:** Rushed code compiles, telemetry loops, and short-term exits that prioritize scale over responsibility.
+          * ❌ databases rented from foreign providers, high-latency trunk lines, and remote hosting controlled by monopolies
+          * ❌ local operations forced onto corporate LLMs that mine private data for their own models
+          * ❌ interfaces designed to trigger dopamine checks and sell ads through user attention
+          * ❌ short-lived hardware and disposable code built to break quickly
+          * ❌ rushing products to hit investor targets or force rapid exits
       - title: What We Forge
         subtitle: The Paradigm of Sovereignty
         content: |
-          * ✔️ **Local-First Infrastructure:** Code that runs on local machines, syncs peer-to-peer, and continues to function offline.
-          * ✔️ **Cognitive Liberty:** Self-hosted AI models and vector databases (RAG) that keep your thoughts secure and unmonitored.
-          * ✔️ **Calm, Minimalist HCI:** Clean typography (Fraunces), structured layouts, and interfaces designed for focus and intent.
-          * ✔️ **Intergenerational Endurance:** Systems engineered as covenants, designed to outlive their creators and adapt across decades.
-          * ✔️ **Sacred Stewardship:** Funding souls and visions through **The Hold**, protecting R&D from speculative extraction.
+          * ✔️ local-first setups that run offline on your own machine and sync peer-to-peer
+          * ✔️ personal AI running private models and databases on local iron
+          * ✔️ clean typography and simple structures that respect focus and reading time
+          * ✔️ software treated as a covenant to serve communities for decades
+          * ✔️ funding souls and long-term visions to guard innovations from speculative capital
   - type: grid_section
     section_id: manifesto-pillars
     title: The Architectural Trinity
@@ -70,7 +70,7 @@ sections:
         content: |
           We draw creative energy from sci-fi design, biblical covenants, historical crafts, and childhood wonder.
       - title: Responsibility Grounds
-        subtitle: Civilization-Scale Duty
+        subtitle: Duty to Stewardship
         content: |
           We build with an awareness of our duty to God, human dignity, community structures, and the soil beneath us.
       - title: Transparency Defines
@@ -92,7 +92,7 @@ sections:
         <p class="formula-text">Ethos (Guide) → Collective (Unite) → Forge (Build) → Hold (Steward) → Ecological & Human Sovereignty</p>
         <br>
         <p class="formula-description">
-          We model our systems after natural networks. Below is the self-healing, recursive loop of our operational pipeline—starting with our guiding Ethos, moving through the guild nodes of The Collective, executing prototypes inside The Forge, protecting them within The Hold, and distributing civilization-grade impact before feeding back to refine our core values.
+          We model our systems after natural networks. Below is the self-healing, recursive loop of our operational pipeline: starting with our guiding Ethos, moving through the guild nodes of The Collective, executing prototypes inside The Forge, protecting them within The Hold, and distributing civilization-grade impact before feeding back to refine our core values.
         </p>
         <div class="formula-diagram">
           <pre class="language-mermaid"><code class="language-mermaid">flowchart TD
