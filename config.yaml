@@ -5,7 +5,6 @@ taxonomies:
 disableKinds:
   - RSS
   - taxonomy
-  - taxonomyTerm
 markup:
   goldmark:
     renderer:
