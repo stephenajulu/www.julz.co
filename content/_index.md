@@ -6,7 +6,7 @@ sections:
     section_id: hero
     class: hero-full-center
     title: >-
-      We are a sovereign tech firm building impactful products and solutions. 
+      We are a sovereign tech firm building impactful products, brands, and solutions. 
 seo:
   title: JULZ - Sovereign Tech Firm
   description: >-
