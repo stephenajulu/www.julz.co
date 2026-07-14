@@ -128,6 +128,10 @@ Decap CMS configurations are defined in [static/admin/config.yml](file:///C:/Use
 
 ## 7. Project Blueprints & Documentation
 
-* **[DESIGN.md](file:///C:/Users/ajulu/Desktop/PROJECTS/Dev%20PROJECTS/www.julz.co/DESIGN.md):** Exact styling design tokens, stacking context layers, glassmorphic styles, and tactile animation properties.
-* **[WRITING.md](file:///C:/Users/ajulu/Desktop/PROJECTS/Dev%20PROJECTS/www.julz.co/WRITING.md):** Editorial style guidelines, vocabulary tables, narrative templates, and sentence length patterns.
-* **[WIKI/documentation.md](file:///C:/Users/ajulu/Desktop/PROJECTS/Dev%20PROJECTS/www.julz.co/WIKI/documentation.md):** Architectural breakdown, technology stack details, dynamic layout components, and deployment steps.
+* **[ARCHITECTURE.md](file:///C:/Users/ajulu/Desktop/PROJECTS/Dev%20PROJECTS/www.julz.co/ARCHITECTURE.md):** System architecture layers, z-index stack hierarchies, compiled pipeline layouts.
+* **[DECISIONS.md](file:///C:/Users/ajulu/Desktop/PROJECTS/Dev%20PROJECTS/www.julz.co/DECISIONS.md):** Architectural Decision Records (ADRs) for typography, content guidelines, and layout adjustments.
+* **[ANTIGRAVITY.md](file:///C:/Users/ajulu/Desktop/PROJECTS/Dev%20PROJECTS/www.julz.co/ANTIGRAVITY.md):** Pair programming workflows, CLI commands, and Google Antigravity developer guidelines.
+* **[SCHEMA.md](file:///C:/Users/ajulu/Desktop/PROJECTS/Dev%20PROJECTS/www.julz.co/SCHEMA.md):** Dynamic section layouts, Decap CMS configuration collections, frontmatter schemas.
+* **[DESIGN.md](file:///C:/Users/ajulu/Desktop/PROJECTS/Dev%20PROJECTS/www.julz.co/DESIGN.md):** Exact styling design tokens, glassmorphism filters, tactile animation parameters.
+* **[WRITING.md](file:///C:/Users/ajulu/Desktop/PROJECTS/Dev%20PROJECTS/www.julz.co/WRITING.md):** Editorial style definitions, vocabulary parameters, sentence rhythm constraints.
+* **[WIKI/documentation.md](file:///C:/Users/ajulu/Desktop/PROJECTS/Dev%20PROJECTS/www.julz.co/WIKI/documentation.md):** Detailed architectural breakdown, component models, and deployment workflows.
