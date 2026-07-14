@@ -82,3 +82,19 @@ The site uses Microformats2 metadata tags to enable self-hosted distribution fol
 * **Publish Date:** `.dt-published` (time datetime class).
 * **Content Body:** `.e-content` (main article markdown body).
 * **Syndication Links:** `.u-syndication` (anchors pointing to POSSE duplicates on Twitter/GitHub/Medium).
+
+---
+
+## 6. Single Page Application (SPA) Router & Transitions
+
+To achieve frictionless navigation without page reloads, the platform implements a lightweight, vanilla JS SPA router inside [init.js](file:///C:/Users/ajulu/Desktop/PROJECTS/Dev%20PROJECTS/www.julz.co/static/js/init.js):
+* **Event Interception:** Listens to all relative site link click events, cancelling standard browser redirect lifecycles.
+* **Transition States:** Triggers an `opacity: 0` and `translateY(8px)` animation on the `#content` main container.
+* **Content Swap:** Fetches the new page HTML using `fetch()`, parses it with `DOMParser`, replaces `#content` inner HTML, updates the document title, and pushes the new URL state using `history.pushState()`.
+* **Lifecycle Re-binding:** Proactively re-hooks all interaction handlers on swap:
+  * Re-hooks navigation toggle listeners.
+  * Re-hooks dropdown hover/click listeners.
+  * Re-hooks responsive video embed reframe wrappers.
+  * Re-triggers Mermaid parser engines on swapped page content.
+  * Updates the active/current link highlights in the menu headers.
+* **Browser History Support:** Hooks into `popstate` to support native back/forward swipe/click navigation actions.

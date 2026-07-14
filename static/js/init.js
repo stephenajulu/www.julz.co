@@ -84,3 +84,109 @@ window.removeDropdownHandlers = function() {
     }
   }
 };
+
+// SPA Router & Transitions
+document.addEventListener('click', function(e) {
+  const link = e.target.closest('a');
+  if (!link) return;
+  
+  const url = link.getAttribute('href');
+  // Only intercept internal relative links, excluding admin and anchor hashes
+  if (url && (url.startsWith('/') || !url.includes('://')) && !url.startsWith('/admin') && !url.includes('#') && link.getAttribute('target') !== '_blank') {
+    e.preventDefault();
+    navigateToPage(url);
+  }
+});
+
+function updateActiveNavLink(url) {
+  const links = document.querySelectorAll('.menu__item a, .dropdown-menu__item a');
+  const path = url.split('?')[0].split('#')[0].replace(/^\/|\/$/g, ''); // Trim slashes and query params
+  
+  links.forEach(link => {
+    const item = link.closest('li');
+    if (!item) return;
+    
+    // Remove active classes
+    item.classList.remove('menu__item--current', 'dropdown-menu__item--current');
+    
+    // Check if parent dropdown exists and clear its active state too
+    const parentDropdown = item.closest('.menu__item--dropdown');
+    if (parentDropdown) parentDropdown.classList.remove('menu__item--current');
+    
+    const linkUrl = link.getAttribute('href').split('?')[0].split('#')[0].replace(/^\/|\/$/g, '');
+    if (path === linkUrl) {
+      if (item.classList.contains('menu__item')) {
+        item.classList.add('menu__item--current');
+      } else if (item.classList.contains('dropdown-menu__item')) {
+        item.classList.add('dropdown-menu__item--current');
+        if (parentDropdown) parentDropdown.classList.add('menu__item--current');
+      }
+    }
+  });
+}
+
+function navigateToPage(url) {
+  const contentArea = document.getElementById('content');
+  if (!contentArea) return;
+  
+  // Close mobile navigation drawer before swapping
+  document.body.classList.remove('js-nav-open');
+  
+  // Fade out current content
+  contentArea.style.opacity = '0';
+  contentArea.style.transform = 'translateY(8px)';
+  contentArea.style.transition = 'opacity 0.18s ease-out, transform 0.18s ease-out';
+  
+  setTimeout(() => {
+    fetch(url)
+      .then(response => response.text())
+      .then(html => {
+        const parser = new DOMParser();
+        const doc = parser.parseFromString(html, 'text/html');
+        const newContent = doc.getElementById('content');
+        const newTitle = doc.querySelector('title');
+        
+        if (newContent) {
+          contentArea.innerHTML = newContent.innerHTML;
+          if (newTitle) document.title = newTitle.innerText;
+          
+          // Scroll smoothly to top
+          window.scrollTo({ top: 0, behavior: 'instant' });
+          
+          // Re-hook lifecycle listeners
+          if (window.removeMainNavigationHandlers) window.removeMainNavigationHandlers();
+          if (window.addMainNavigationHandlers) window.addMainNavigationHandlers();
+          
+          if (window.removeDropdownHandlers) window.removeDropdownHandlers();
+          if (window.addDropdownHandlers) window.addDropdownHandlers();
+          
+          if (window.removeVideoEmbedsHandlers) window.removeVideoEmbedsHandlers();
+          if (window.addVideoEmbedsHandlers) window.addVideoEmbedsHandlers();
+          
+          // Re-trigger Mermaid if present on page
+          if (window.renderMermaidDiagrams) window.renderMermaidDiagrams();
+          
+          // Update menu active links highlight
+          updateActiveNavLink(url);
+          
+          // Push state to browser history
+          history.pushState(null, '', url);
+          
+          // Fade in new content
+          setTimeout(() => {
+            contentArea.style.opacity = '1';
+            contentArea.style.transform = 'translateY(0)';
+          }, 50);
+        }
+      })
+      .catch(error => {
+        console.warn('SPA router fallback:', error);
+        window.location.href = url; // Hard fallback on error
+      });
+  }, 180);
+}
+
+// Support browser back/forward buttons
+window.addEventListener('popstate', function() {
+  navigateToPage(window.location.pathname);
+});
