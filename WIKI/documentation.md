@@ -179,3 +179,10 @@ The site is pre-configured for deployment on Netlify:
 * **Build Command:** `hugo --gc --minify`
 * **Publish Directory:** `public`
 * **Netlify Forms:** Forms (contact and newsletter) are automatically captured by Netlify's crawler using the `data-netlify="true"` attributes.
+
+---
+
+## 9. Project Blueprints
+
+* **[DESIGN.md](file:///C:/Users/ajulu/Desktop/PROJECTS/Dev%20PROJECTS/www.julz.co/DESIGN.md):** Exact styling design tokens, stacking context layers, glassmorphic styles, and tactile animation properties.
+* **[WRITING.md](file:///C:/Users/ajulu/Desktop/PROJECTS/Dev%20PROJECTS/www.julz.co/WRITING.md):** Editorial style guidelines, vocabulary tables, narrative templates, and sentence length patterns.
