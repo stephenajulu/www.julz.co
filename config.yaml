@@ -1,5 +1,6 @@
 title: Stackbit Agency Theme
 baseURL: /
+ignoreErrors: ["error-disable-taxonomy"]
 taxonomies:
   stub: stub
 disableKinds:
