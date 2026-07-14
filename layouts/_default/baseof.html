@@ -23,23 +23,110 @@
             <meta {{ $key_name }}="{{ $meta.name }}" content="{{ $meta.value }}">
           {{ end }}
         {{ end }}
+
+        <!-- OpenGraph and Twitter Cards for SEO & Social Media Optimization -->
+        <meta property="og:site_name" content="{{ .Site.Data.config.title }}">
+        <meta property="og:title" content="{{ if .Params.seo.title }}{{ .Params.seo.title }}{{ else }}{{ .Title }} | {{ .Site.Data.config.title }}{{ end }}">
+        <meta property="og:description" content="{{ .Params.seo.description | default .Summary }}">
+        <meta property="og:type" content="{{ if .IsPage }}article{{ else }}website{{ end }}">
+        <meta property="og:url" content="{{ .Permalink }}">
+        {{ if .Params.image }}
+        <meta property="og:image" content="{{ .Params.image | absURL }}">
+        {{ else if .Params.thumb_image }}
+        <meta property="og:image" content="{{ .Params.thumb_image | absURL }}">
+        {{ else }}
+        <meta property="og:image" content="{{ "/images/logo.png" | absURL }}">
+        {{ end }}
+
+        <meta name="twitter:card" content="summary_large_image">
+        <meta name="twitter:title" content="{{ if .Params.seo.title }}{{ .Params.seo.title }}{{ else }}{{ .Title }} | {{ .Site.Data.config.title }}{{ end }}">
+        <meta name="twitter:description" content="{{ .Params.seo.description | default .Summary }}">
+        {{ if .Params.image }}
+        <meta name="twitter:image" content="{{ .Params.image | absURL }}">
+        {{ else if .Params.thumb_image }}
+        <meta name="twitter:image" content="{{ .Params.thumb_image | absURL }}">
+        {{ end }}
+
+        <!-- JSON-LD Schema Markup for AI, Search Engines and Generative Search (AEO/GEO/SEO) -->
+        <script type="application/ld+json">
+        {
+          "@context": "https://schema.org",
+          "@type": "Organization",
+          "name": "JULZ",
+          "url": "{{ .Site.BaseURL }}",
+          "logo": "{{ "/images/logo.png" | absURL }}",
+          "founder": "Stephen Ajulu",
+          "foundingDate": "2016",
+          "description": "Sovereign Tech Forge architecting and building sustainable products, brands, and infrastructures that harmonize technology with nature."
+        }
+        </script>
+
+        {{ if .IsPage }}
+        <script type="application/ld+json">
+        {
+          "@context": "https://schema.org",
+          "@type": "BlogPosting",
+          "headline": "{{ .Title }}",
+          "datePublished": "{{ .Date.Format "2006-01-02T15:04:05-07:00" }}",
+          "dateModified": "{{ .Lastmod.Format "2006-01-02T15:04:05-07:00" }}",
+          "author": {
+            "@type": "Person",
+            "name": "Stephen Ajulu",
+            "url": "{{ .Site.BaseURL }}"
+          },
+          "publisher": {
+            "@type": "Organization",
+            "name": "JULZ",
+            "logo": {
+              "@type": "ImageObject",
+              "url": "{{ "/images/logo.png" | absURL }}"
+            }
+          },
+          "description": "{{ .Params.excerpt | default .Summary }}"
+        }
+        </script>
+        {{ end }}
         {{ $font := .Site.Data.config.base_font | default "fraunces" }}
         {{ if ne $font "system-sans" }}
         <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link rel="preconnect" href="https://fonts.googleapis.com" crossorigin>
         {{ end }}
         {{ if eq $font "fraunces" }}
         <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,wght@0,400;0,500;1,400;1,500&display=swap" rel="stylesheet">
         {{ else if eq $font "karla" }}
         <link href="https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+        {{ else if eq $font "outfit" }}
+        <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+        {{ else if eq $font "space-grotesk" }}
+        <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+        {{ else if eq $font "inter" }}
+        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+        {{ else if eq $font "playfair-display" }}
+        <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,700&display=swap" rel="stylesheet">
         {{ end }}
-        <link rel="stylesheet" href="{{ (resources.Get "sass/main.scss" | resources.ToCSS (dict "indentWidth" 4 "outputStyle" "nested" "precision" 10 "targetPath" "css/main.css")).Permalink }}">
+        <link rel="stylesheet" href="{{ (resources.Get "sass/main.scss" | toCSS (dict "indentWidth" 4 "outputStyle" "nested" "precision" 10 "targetPath" "css/main.css") | fingerprint).Permalink }}">
         {{ if .Site.Data.config.favicon }}
         <link rel="icon" href="{{ $.Site.Data.config.favicon | relURL }}">
         {{ end }}
         
     </head>
-    <body class="font-{{ .Site.Data.config.base_font }} palette-{{ .Site.Data.config.color_scheme }} accent-{{ .Site.Data.config.accent_color }}">
-      <div style="position:fixed;top:0;left:0;width:100%;height:100%;background:url('/images/background.png') no-repeat center center fixed;background-size:cover;filter:brightness(90%)" loading="lazy"></div> 
+    <body class="font-{{ .Site.Data.config.base_font }} palette-{{ .Site.Data.config.color_scheme }} accent-{{ .Site.Data.config.accent_color }}{{ if .IsHome }} body-home{{ end }}">
+      <div class="mesh-background">
+        <div class="mesh-ball mesh-ball-1"></div>
+        <div class="mesh-ball mesh-ball-2"></div>
+        <div class="mesh-ball mesh-ball-3"></div>
+        <div class="mesh-ball mesh-ball-4"></div>
+        <div class="mesh-ball mesh-ball-5"></div>
+        
+        <!-- Twinkling stars in the background -->
+        <div class="mesh-star mesh-star-1"></div>
+        <div class="mesh-star mesh-star-2"></div>
+        <div class="mesh-star mesh-star-3"></div>
+        <div class="mesh-star mesh-star-4"></div>
+        <div class="mesh-star mesh-star-5"></div>
+        <div class="mesh-star mesh-star-6"></div>
+        <div class="mesh-star mesh-star-7"></div>
+      </div> 
         <div id="site-wrap" class="site">
           {{ partial "header.html" . }}
           <main id="content" class="site-content">

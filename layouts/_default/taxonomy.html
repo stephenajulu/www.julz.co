@@ -1,0 +1,23 @@
+{{ define "content" }}
+
+<header class="section section--header">
+  <div class="container container--lg">
+    <h1 class="section__title line-top">
+      {{ if eq .Data.Plural "categories" }}Category:{{ else if eq .Data.Plural "tags" }}Tag:{{ end }} {{ .Title }}
+    </h1>
+    <p class="section__subtitle">Exploring insights under the sovereign coordinate "{{ .Title }}"</p>
+  </div>
+</header>
+
+<div class="section section--portfolio">
+  <div class="container container--lg">
+    <div class="grid post-feed post-feed--col-three">
+      {{ range .Pages }}
+        {{ $include_dict := dict "post_page" . }}
+        {{ partial "blog_feed_item.html" $include_dict }}
+      {{ end }}
+    </div>
+  </div>
+</div>
+
+{{ end }}

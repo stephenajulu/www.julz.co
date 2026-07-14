@@ -20,10 +20,10 @@
   </div>
 </article>
 
-{{ $projects_sorted := ((.Site.GetPage "section" "/portfolio").Pages).ByDate.Reverse }}
+{{ $projects_sorted := ((.Site.GetPage "section" "/hold").Pages).ByDate.Reverse }}
 {{ $project_item_len := len $projects_sorted }}
 {{ range $project_item_idx, $project_item := $projects_sorted }}
-  {{ if eq $project_item.URL $.URL }}
+  {{ if eq $project_item.RelPermalink $.RelPermalink }}
     {{ $curr_index := $project_item_idx }}
     {{ $next_index := add $curr_index 1 }}
     {{ $prev_index := sub $curr_index 1 }}
@@ -31,17 +31,17 @@
     {{ if gt $project_index_length 0 }}
     <nav class="section section--portfolio">
       <div class="container container--lg">
-        <h2 class="section__title line-top">More Projects</h2>
+        <h2 class="section__title line-top">More Creations</h2>
         <div class="grid portfolio-feed portfolio-feed--tiles">
           {{ if ne $curr_index 0 }}
             {{ $prev_project := index $projects_sorted $prev_index }}
             {{ $include_dict := dict "project_page" $prev_project }}
-            {{ partial "portfolio_item.html" $include_dict }}
+            {{ partial "hold_item.html" $include_dict }}
           {{ end }}
           {{ if lt $curr_index $project_index_length }}
             {{ $next_project := index $projects_sorted $next_index }}
             {{ $include_dict := dict "project_page" $next_project }}
-            {{ partial "portfolio_item.html" $include_dict }}
+            {{ partial "hold_item.html" $include_dict }}
           {{ end }}
         </div>
       </div>

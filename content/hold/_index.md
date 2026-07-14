@@ -1,18 +1,19 @@
 ---
-title: The Portfolio
+title: The Hold
+subtitle: Our creations, investments, and sovereign infrastructure assets
 layout_style: tiles
 seo:
-  title: The Portfolio | Julz
-  description: This is the portfolio page
+  title: The Hold | JULZ
+  description: This is The Hold page
   extra:
     - name: 'og:type'
       value: website
       keyName: property
     - name: 'og:title'
-      value: The Portfolio | Julz
+      value: The Hold | Julz
       keyName: property
     - name: 'og:description'
-      value: This is the portfolio page
+      value: This is The Hold page
       keyName: property
     - name: 'og:image'
       value: images/work-book-1.jpg
@@ -21,11 +22,11 @@ seo:
     - name: 'twitter:card'
       value: summary_large_image
     - name: 'twitter:title'
-      value: The Portfolio | Julz
+      value: The Hold | Julz
     - name: 'twitter:description'
-      value: This is the portfolio page
+      value: This is The Hold page
     - name: 'twitter:image'
       value: images/work-book-1.jpg
       relativeUrl: true
-layout: portfolio
+layout: hold
 ---

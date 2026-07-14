@@ -28,7 +28,7 @@ sections:
         options:
           - The Forge
           - The Collective
-          - The Portfolio
+          - The Hold
           - Projects
           - Investment
           - Careers

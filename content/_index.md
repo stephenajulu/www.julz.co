@@ -4,6 +4,7 @@ hide_title: true
 sections:
   - type: hero_section
     section_id: hero
+    class: hero-full-center
     title: >-
       We are a sovereign tech firm building impactful products and solutions. 
 seo:

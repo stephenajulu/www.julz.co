@@ -2,7 +2,7 @@
 {{ $bg_color := $section.bg_color | default "none" }}
 <section id="{{ $section.section_id }}" class="section section--cta">
   <div class="container container--lg">
-    <div {{ if ne $bg_color "none" }}class="section__bg"{{ end }}>
+    <div {{ if ne $bg_color "none" }}class="section__bg bg-{{ $bg_color }}"{{ end }}>
       <div {{ if $section.image }}class="grid"{{ end }}>
         {{ if $section.image }}
         <div class="section__image cell">

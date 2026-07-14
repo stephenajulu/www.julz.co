@@ -1,0 +1,347 @@
+backend:
+  name: git-gateway
+  branch: main
+
+media_folder: "static/images"
+public_folder: "/images"
+
+collections:
+  - name: "pages"
+    label: "Pages"
+    delete: false
+    files:
+      - file: "content/_index.md"
+        label: "Homepage"
+        name: "home"
+        fields:
+          - {label: "Title", name: "title", widget: "string"}
+          - {label: "Subtitle", name: "subtitle", widget: "string"}
+          - {label: "Layout", name: "layout", widget: "hidden", default: "advanced"}
+          - label: "Sections"
+            name: "sections"
+            widget: "list"
+            types:
+              - label: "Hero Section"
+                name: "hero_section"
+                widget: "object"
+                fields:
+                  - {label: "Section ID", name: "section_id", widget: "string", default: "hero"}
+                  - {label: "Title", name: "title", widget: "string"}
+                  - {label: "Class", name: "class", widget: "string", default: "hero-full-center"}
+                  - {label: "Content (Markdown)", name: "content", widget: "markdown"}
+                  - label: "Actions"
+                    name: "actions"
+                    widget: "list"
+                    fields:
+                      - {label: "Label", name: "label", widget: "string"}
+                      - {label: "URL", name: "url", widget: "string"}
+                      - {label: "Style", name: "style", widget: "select", options: ["button", "link"]}
+      - file: "content/about.md"
+        label: "About Page"
+        name: "about"
+        fields:
+          - {label: "Title", name: "title", widget: "string"}
+          - {label: "Subtitle", name: "subtitle", widget: "string"}
+          - {label: "Layout", name: "layout", widget: "hidden", default: "advanced"}
+          - label: "Sections"
+            name: "sections"
+            widget: "list"
+            types:
+              - label: "Content Section"
+                name: "content_section"
+                widget: "object"
+                fields:
+                  - {label: "Content (Markdown)", name: "content", widget: "markdown"}
+              - label: "Grid Section"
+                name: "grid_section"
+                widget: "object"
+                fields:
+                  - {label: "Section ID", name: "section_id", widget: "string"}
+                  - {label: "Title", name: "title", widget: "string"}
+                  - {label: "Subtitle", name: "subtitle", widget: "string", required: false}
+                  - {label: "Columns", name: "col_number", widget: "select", options: ["two", "three"]}
+                  - label: "Grid Items"
+                    name: "grid_items"
+                    widget: "list"
+                    fields:
+                      - {label: "Title", name: "title", widget: "string"}
+                      - {label: "Subtitle", name: "subtitle", widget: "string", required: false}
+                      - {label: "Image", name: "image", widget: "image", required: false}
+                      - {label: "Content (Markdown)", name: "content", widget: "markdown"}
+                      - label: "Actions"
+                        name: "actions"
+                        widget: "list"
+                        required: false
+                        fields:
+                          - {label: "Label", name: "label", widget: "string"}
+                          - {label: "URL", name: "url", widget: "string"}
+                          - {label: "Style", name: "style", widget: "select", options: ["button", "link", "icon"]}
+                          - {label: "Icon Name", name: "icon", widget: "string", required: false}
+                          - {label: "Open in New Window", name: "new_window", widget: "boolean", default: false}
+              - label: "CTA Section"
+                name: "cta_section"
+                widget: "object"
+                fields:
+                  - {label: "Section ID", name: "section_id", widget: "string", default: "cta"}
+                  - {label: "Title", name: "title", widget: "string"}
+                  - {label: "Content", name: "content", widget: "markdown"}
+                  - {label: "Image", name: "image", widget: "image", required: false}
+                  - {label: "Image Alt", name: "image_alt", widget: "string", required: false}
+                  - {label: "Background Color", name: "bg_color", widget: "select", options: ["none", "dark", "translucent", "black", "accent"], default: "dark"}
+                  - label: "Actions"
+                    name: "actions"
+                    widget: "list"
+                    fields:
+                      - {label: "Label", name: "label", widget: "string"}
+                      - {label: "URL", name: "url", widget: "string"}
+                      - {label: "Style", name: "style", widget: "select", options: ["button", "link"]}
+      - file: "content/manifesto.md"
+        label: "Manifesto Page"
+        name: "manifesto"
+        fields:
+          - {label: "Title", name: "title", widget: "string"}
+          - {label: "Subtitle", name: "subtitle", widget: "string"}
+          - {label: "Layout", name: "layout", widget: "hidden", default: "advanced"}
+          - {label: "Hide Title Header", name: "hide_title", widget: "boolean", default: true}
+          - {label: "Mermaid Enabled", name: "mermaid", widget: "boolean", default: true}
+          - label: "Sections"
+            name: "sections"
+            widget: "list"
+            types:
+              - label: "Hero Section"
+                name: "hero_section"
+                widget: "object"
+                fields:
+                  - {label: "Section ID", name: "section_id", widget: "string"}
+                  - {label: "Title", name: "title", widget: "string"}
+                  - {label: "Content", name: "content", widget: "markdown"}
+              - label: "Grid Section"
+                name: "grid_section"
+                widget: "object"
+                fields:
+                  - {label: "Section ID", name: "section_id", widget: "string"}
+                  - {label: "Title", name: "title", widget: "string"}
+                  - {label: "Subtitle", name: "subtitle", widget: "string", required: false}
+                  - {label: "Columns", name: "col_number", widget: "select", options: ["two", "three"]}
+                  - label: "Grid Items"
+                    name: "grid_items"
+                    widget: "list"
+                    fields:
+                      - {label: "Title", name: "title", widget: "string"}
+                      - {label: "Subtitle", name: "subtitle", widget: "string", required: false}
+                      - {label: "Content", name: "content", widget: "markdown"}
+              - label: "Content Section"
+                name: "content_section"
+                widget: "object"
+                fields:
+                  - {label: "Content (Markdown/Mermaid)", name: "content", widget: "markdown"}
+              - label: "CTA Section"
+                name: "cta_section"
+                widget: "object"
+                fields:
+                  - {label: "Section ID", name: "section_id", widget: "string"}
+                  - {label: "Title", name: "title", widget: "string"}
+                  - {label: "Content", name: "content", widget: "markdown"}
+                  - {label: "Background Color", name: "bg_color", widget: "select", options: ["none", "dark", "translucent", "black", "accent"], default: "translucent"}
+                  - label: "Actions"
+                    name: "actions"
+                    widget: "list"
+                    fields:
+                      - {label: "Label", name: "label", widget: "string"}
+                      - {label: "URL", name: "url", widget: "string"}
+                      - {label: "Style", name: "style", widget: "select", options: ["button", "link"]}
+      - file: "content/collective.md"
+        label: "The Collective Page"
+        name: "collective"
+        fields:
+          - {label: "Title", name: "title", widget: "string"}
+          - {label: "Subtitle", name: "subtitle", widget: "string"}
+          - {label: "Layout", name: "layout", widget: "hidden", default: "advanced"}
+          - {label: "Hide Title Header", name: "hide_title", widget: "boolean", default: true}
+          - label: "Sections"
+            name: "sections"
+            widget: "list"
+            types:
+              - label: "Hero Section"
+                name: "hero_section"
+                widget: "object"
+                fields:
+                  - {label: "Section ID", name: "section_id", widget: "string"}
+                  - {label: "Title", name: "title", widget: "string"}
+                  - {label: "Class", name: "class", widget: "string", default: "hero-full-center"}
+                  - {label: "Content", name: "content", widget: "markdown"}
+              - label: "Grid Section"
+                name: "grid_section"
+                widget: "object"
+                fields:
+                  - {label: "Section ID", name: "section_id", widget: "string"}
+                  - {label: "Title", name: "title", widget: "string"}
+                  - {label: "Subtitle", name: "subtitle", widget: "string", required: false}
+                  - {label: "Columns", name: "col_number", widget: "select", options: ["two", "three"]}
+                  - label: "Grid Items"
+                    name: "grid_items"
+                    widget: "list"
+                    fields:
+                      - {label: "Title", name: "title", widget: "string"}
+                      - {label: "Subtitle", name: "subtitle", widget: "string", required: false}
+                      - {label: "Image", name: "image", widget: "image", required: false}
+                      - {label: "Content (Markdown)", name: "content", widget: "markdown"}
+                      - label: "Actions"
+                        name: "actions"
+                        widget: "list"
+                        required: false
+                        fields:
+                          - {label: "Label", name: "label", widget: "string"}
+                          - {label: "URL", name: "url", widget: "string"}
+                          - {label: "Style", name: "style", widget: "select", options: ["button", "link", "icon"]}
+                          - {label: "Icon Name", name: "icon", widget: "string", required: false}
+                          - {label: "Open in New Window", name: "new_window", widget: "boolean", default: false}
+              - label: "Content Section"
+                name: "content_section"
+                widget: "object"
+                fields:
+                  - {label: "Content (Markdown)", name: "content", widget: "markdown"}
+              - label: "CTA Section"
+                name: "cta_section"
+                widget: "object"
+                fields:
+                  - {label: "Section ID", name: "section_id", widget: "string"}
+                  - {label: "Title", name: "title", widget: "string"}
+                  - {label: "Content", name: "content", widget: "markdown"}
+                  - {label: "Background Color", name: "bg_color", widget: "select", options: ["none", "dark", "translucent", "black", "accent"], default: "translucent"}
+                  - label: "Actions"
+                    name: "actions"
+                    widget: "list"
+                    fields:
+                      - {label: "Label", name: "label", widget: "string"}
+                      - {label: "URL", name: "url", widget: "string"}
+                      - {label: "Style", name: "style", widget: "select", options: ["button", "link"]}
+      - file: "content/forge.md"
+        label: "The Forge Page"
+        name: "forge"
+        fields:
+          - {label: "Title", name: "title", widget: "string"}
+          - {label: "Subtitle", name: "subtitle", widget: "string"}
+          - {label: "Layout", name: "layout", widget: "hidden", default: "advanced"}
+          - {label: "Hide Title Header", name: "hide_title", widget: "boolean", default: true}
+          - label: "Sections"
+            name: "sections"
+            widget: "list"
+            types:
+              - label: "Hero Section"
+                name: "hero_section"
+                widget: "object"
+                fields:
+                  - {label: "Section ID", name: "section_id", widget: "string"}
+                  - {label: "Title", name: "title", widget: "string"}
+                  - {label: "Class", name: "class", widget: "string", default: "hero-full-center"}
+                  - {label: "Content", name: "content", widget: "markdown"}
+              - label: "Grid Section"
+                name: "grid_section"
+                widget: "object"
+                fields:
+                  - {label: "Section ID", name: "section_id", widget: "string"}
+                  - {label: "Title", name: "title", widget: "string"}
+                  - {label: "Subtitle", name: "subtitle", widget: "string", required: false}
+                  - {label: "Columns", name: "col_number", widget: "select", options: ["two", "three"]}
+                  - label: "Grid Items"
+                    name: "grid_items"
+                    widget: "list"
+                    fields:
+                      - {label: "Title", name: "title", widget: "string"}
+                      - {label: "Subtitle", name: "subtitle", widget: "string", required: false}
+                      - {label: "Image", name: "image", widget: "image", required: false}
+                      - {label: "Content (Markdown)", name: "content", widget: "markdown"}
+              - label: "CTA Section"
+                name: "cta_section"
+                widget: "object"
+                fields:
+                  - {label: "Section ID", name: "section_id", widget: "string"}
+                  - {label: "Title", name: "title", widget: "string"}
+                  - {label: "Content", name: "content", widget: "markdown"}
+                  - {label: "Background Color", name: "bg_color", widget: "select", options: ["none", "dark", "translucent", "black", "accent"], default: "translucent"}
+                  - label: "Actions"
+                    name: "actions"
+                    widget: "list"
+                    fields:
+                      - {label: "Label", name: "label", widget: "string"}
+                      - {label: "URL", name: "url", widget: "string"}
+                      - {label: "Style", name: "style", widget: "select", options: ["button", "link"]}
+
+  - name: "blog"
+    label: "Journal / Insights"
+    folder: "content/blog"
+    create: true
+    slug: "{{slug}}"
+    fields:
+      - {label: "Layout", name: "layout", widget: "hidden", default: "post"}
+      - {label: "Title", name: "title", widget: "string"}
+      - {label: "Subtitle", name: "subtitle", widget: "string", required: false}
+      - {label: "Publish Date", name: "date", widget: "datetime"}
+      - {label: "Excerpt", name: "excerpt", widget: "text"}
+      - {label: "Thumbnail Image", name: "thumb_image", widget: "image", required: false}
+      - {label: "Thumbnail Alt", name: "thumb_image_alt", widget: "string", required: false}
+      - {label: "Featured Image", name: "image", widget: "image", required: false}
+      - {label: "Featured Image Alt", name: "image_alt", widget: "string", required: false}
+      - {label: "Categories", name: "categories", widget: "list", default: ["Sovereignty"]}
+      - {label: "Tags", name: "tags", widget: "list", default: ["tech"]}
+      - {label: "Syndication URLs", name: "syndication", widget: "list", required: false}
+      - {label: "Body", name: "body", widget: "markdown"}
+
+  - name: "hold"
+    label: "The Hold"
+    folder: "content/hold"
+    create: true
+    slug: "{{slug}}"
+    fields:
+      - {label: "Layout", name: "layout", widget: "hidden", default: "project"}
+      - {label: "Title", name: "title", widget: "string"}
+      - {label: "Subtitle", name: "subtitle", widget: "string", required: false}
+      - {label: "Date", name: "date", widget: "datetime"}
+      - {label: "Excerpt", name: "excerpt", widget: "text"}
+      - {label: "Thumbnail Image", name: "thumb_image", widget: "image", required: false}
+      - {label: "Thumbnail Alt", name: "thumb_image_alt", widget: "string", required: false}
+      - {label: "Featured Image", name: "image", widget: "image", required: false}
+      - {label: "Featured Image Alt", name: "image_alt", widget: "string", required: false}
+      - {label: "Body", name: "body", widget: "markdown"}
+
+  - name: "settings"
+    label: "Global Settings"
+    delete: false
+    files:
+      - file: "data/config.json"
+        label: "Site Configurations"
+        name: "config"
+        fields:
+          - {label: "Site Title", name: "title", widget: "string"}
+          - {label: "Base Typography Font", name: "base_font", widget: "select", options: ["fraunces", "karla", "outfit", "space-grotesk", "inter", "playfair-display", "system-sans"], default: "fraunces"}
+          - {label: "Color Scheme", name: "color_scheme", widget: "select", options: ["dark"], default: "dark"}
+          - {label: "Accent Color Theme", name: "accent_color", widget: "select", options: ["violet", "purple", "blue", "green"], default: "violet"}
+          - {label: "Favicon Path", name: "favicon", widget: "string", default: "images/favicon.png"}
+          - label: "Header Config"
+            name: "header"
+            widget: "object"
+            fields:
+              - {label: "Title Link Logo", name: "logo", widget: "image", required: false}
+              - {label: "Logo Alt Text", name: "logo_alt", widget: "string", required: false}
+              - {label: "Header Text Title (Fallback)", name: "title", widget: "string"}
+              - {label: "Enable Navigation Links", name: "has_nav", widget: "boolean", default: true}
+              - label: "Navigation Links"
+                name: "nav_links"
+                widget: "list"
+                fields:
+                  - {label: "Label", name: "label", widget: "string"}
+                  - {label: "URL Link Path", name: "url", widget: "string"}
+                  - {label: "Style Type", name: "style", widget: "select", options: ["link", "button"]}
+          - label: "Footer Config"
+            name: "footer"
+            widget: "object"
+            fields:
+              - {label: "Footer Content description", name: "content", widget: "markdown"}
+              - {label: "Copyright String", name: "copyright", widget: "string"}
+              - label: "Footer Links"
+                name: "links"
+                widget: "list"
+                fields:
+                  - {label: "Label", name: "label", widget: "string"}
+                  - {label: "URL Path", name: "url", widget: "string"}

@@ -1,14 +1,38 @@
 {{ define "content" }}
 
-<article class="post">
+<article class="post h-entry">
   <header class="post__header">
     <div class="container container--md">
-      <h1 class="post__title line-top">{{ .Params.title }}</h1>
+      <h1 class="post__title line-top p-name">{{ .Params.title }}</h1>
       {{ if .Params.subtitle }}
-      <div class="post__subtitle">
+      <div class="post__subtitle p-summary">
         {{ $.Params.subtitle }}
       </div>
       {{ end }}
+      <div class="post__meta-header">
+        <time class="published dt-published" datetime="{{ .Date | dateFormat "2006-01-02 15:04" }}">{{ .Date | dateFormat "January 02, 2006" }}</time>
+        <span class="post__read-time">• {{ .ReadingTime }} min read</span>
+      </div>
+      
+      <div class="post__meta-taxonomies">
+        {{ with .Params.categories }}
+          <span class="post__meta-label">In</span>
+          {{ range . }}
+            <a href="/categories/{{ . | urlize }}/" class="taxonomy-pill taxonomy-pill--category">{{ . }}</a>
+          {{ end }}
+        {{ end }}
+        {{ with .Params.tags }}
+          <span class="post__meta-label">Tagged</span>
+          {{ range . }}
+            <a href="/tags/{{ . | urlize }}/" class="taxonomy-pill taxonomy-pill--tag">#{{ . }}</a>
+          {{ end }}
+        {{ end }}
+      </div>
+      
+      <div class="p-author h-card" style="display:none;">
+        <a class="u-url p-name" href="/">Stephen Ajulu</a>
+        <img class="u-photo" src="/images/1653516600275.jpg" alt="Stephen Ajulu" />
+      </div>
     </div>
   </header>
   {{ if .Params.image }}
@@ -18,9 +42,25 @@
     </div>
   </div>
   {{ end }}
-  <div class="post__body text-block">
+  <div class="post__body text-block e-content">
     <div class="container container--md">
+      {{ if gt .WordCount 500 }}
+      <div class="post__toc">
+        <h4 class="post__toc-title">Table of Contents</h4>
+        {{ .TableOfContents }}
+      </div>
+      {{ end }}
+      
       {{ .Content }}
+      
+      {{ with .Params.syndication }}
+      <div class="post__syndicated-meta">
+        <span class="post__meta-label">Syndicated to</span>
+        {{ range . }}
+          <a class="u-syndication taxonomy-pill taxonomy-pill--tag" href="{{ . }}" target="_blank" rel="syndication">{{ . }}</a>
+        {{ end }}
+      </div>
+      {{ end }}
     </div>
   </div>
   <footer class="post__meta">
@@ -30,10 +70,24 @@
   </footer>
 </article>
 
+{{ $related := .Site.RegularPages.Related . | first 2 }}
+{{ if $related }}
+<nav class="section section--posts">
+  <div class="container container--lg">
+    <h2 class="section__title line-top">Related Insights</h2>
+    <div class="grid post-feed post-feed--col-two">
+      {{ range $post_item := $related }}
+        {{ $include_dict := dict "post_page" $post_item }}
+        {{ partial "blog_feed_item.html" $include_dict }}
+      {{ end }}
+    </div>
+  </div>
+</nav>
+{{ else }}
 {{ $posts_sorted := ((.Site.GetPage "section" "/blog").Pages).ByDate.Reverse }}
 {{ $post_item_len := len $posts_sorted }}
 {{ range $post_item_idx, $post_item := $posts_sorted }}
-  {{ if eq $post_item.URL $.URL }}
+  {{ if eq $post_item.RelPermalink $.RelPermalink }}
     {{ $curr_index := $post_item_idx }}
     {{ $next_index := add $curr_index 1 }}
     {{ $prev_index := sub $curr_index 1 }}
@@ -58,6 +112,7 @@
     </nav>
     {{ end }}
   {{ end }}
+{{ end }}
 {{ end }}
 
 {{ end }}

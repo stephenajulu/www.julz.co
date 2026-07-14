@@ -14,10 +14,10 @@
 <div class="section section--portfolio">
   <div class="container container--lg">
     <div class="grid portfolio-feed portfolio-feed--{{ $layout_style }}">
-      {{ $projects_sorted := ((.Site.GetPage "section" "/portfolio").Pages).ByDate.Reverse }}
+      {{ $projects_sorted := ((.Site.GetPage "section" "/hold").Pages).ByDate.Reverse }}
       {{ range $project := $projects_sorted }}
       <article class="cell project-card">
-        <a href="{{ $project.URL }}" class="project-card__link">
+        <a href="{{ $project.RelPermalink }}" class="project-card__link">
           {{ if $project.Params.thumb_image }}
           <div class="project-card__image">
             <img src="{{ $project.Params.thumb_image | relURL }}" alt="{{ $project.Params.thumb_image_alt }}" />
