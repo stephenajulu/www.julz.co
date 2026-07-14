@@ -108,7 +108,11 @@
         {{ if .Site.Data.config.favicon }}
         <link rel="icon" href="{{ $.Site.Data.config.favicon | relURL }}">
         {{ end }}
-        
+        {{ if .Params.custom_css }}
+        <style type="text/css">
+          {{ .Params.custom_css | safeCSS }}
+        </style>
+        {{ end }}
     </head>
     <body class="font-{{ .Site.Data.config.base_font }} palette-{{ .Site.Data.config.color_scheme }} accent-{{ .Site.Data.config.accent_color }}{{ if .IsHome }} body-home{{ end }}">
       <div class="mesh-background">

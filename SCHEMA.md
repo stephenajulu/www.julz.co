@@ -55,6 +55,14 @@ Used for core pages: Home, About, Manifesto, Collective, and Forge. Content is m
   * `url` (string)
   * `style` (select: `button`, `link`)
 
+##### 5. Custom Styling Override (`custom_css`)
+* Any section inside the `sections` array can include a `custom_css` field containing raw CSS rules. These rules are injected as an inline style block directly preceding the section, allowing granular styling overrides.
+
+---
+
+### Global / Page-Level Custom CSS
+Every content page (Advanced, Post, Project, or standard markdown page) can define a page-level `custom_css` string in its frontmatter. This string is compiled and injected into the `<head>` of the page, enabling custom styling overrides for that page.
+
 ---
 
 ### Paradigm B: Collection Pages (`layout: post` / `layout: project`)

@@ -55,3 +55,32 @@ window.addEventListener('resize', function () {
     document.body.classList.remove('js-nav-open');
   }
 }, true);
+
+// Handle dropdown click toggle for mobile / desktop click support
+function dropdownToggleHandler(e) {
+  e.preventDefault();
+  const parentItem = this.closest('.menu__item--dropdown');
+  if (parentItem) {
+    parentItem.classList.toggle('is-active');
+    const expanded = this.getAttribute('aria-expanded') === 'true' || false;
+    this.setAttribute('aria-expanded', !expanded);
+  }
+}
+
+window.addDropdownHandlers = function() {
+  const dropdowns = document.querySelectorAll('.dropdown-toggle');
+  if (dropdowns) {
+    for (let i = 0; i < dropdowns.length; i++) {
+      dropdowns[i].addEventListener('click', dropdownToggleHandler, false);
+    }
+  }
+};
+
+window.removeDropdownHandlers = function() {
+  const dropdowns = document.querySelectorAll('.dropdown-toggle');
+  if (dropdowns) {
+    for (let i = 0; i < dropdowns.length; i++) {
+      dropdowns[i].removeEventListener('click', dropdownToggleHandler, false);
+    }
+  }
+};

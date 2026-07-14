@@ -21,24 +21,32 @@
                 "style": "link"
             },
             {
-                "label": "The Collective",
-                "url": "/collective/",
-                "style": "link"
-            },
-            {
-                "label": "The Forge",
-                "url": "/forge/",
-                "style": "link"
-            },
-            {
-                "label": "The Hold",
-                "url": "/hold/", 
-                "style": "link"
-            }, 
-            {
                 "label": "Insights",
                 "url": "/blog/",
                 "style": "link"
+            },
+            {
+                "label": "Explore",
+                "url": "#",
+                "style": "dropdown",
+                "children": [
+                    {
+                        "label": "Manifesto",
+                        "url": "/manifesto/"
+                    },
+                    {
+                        "label": "Collective",
+                        "url": "/collective/"
+                    },
+                    {
+                        "label": "Forge",
+                        "url": "/forge/"
+                    },
+                    {
+                        "label": "Hold",
+                        "url": "/hold/"
+                    }
+                ]
             },
             {
                 "label": "Contact",

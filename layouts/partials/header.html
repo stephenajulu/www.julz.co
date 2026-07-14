@@ -18,10 +18,24 @@
           {{ range $action := $.Site.Data.config.header.nav_links }}
           {{ $pageUrl := trim $.RelPermalink "/" }}
           {{ $actionUrl := trim $action.url "/" }}
+          {{ if eq $action.style "dropdown" }}
+          <li class="menu__item menu__item--dropdown">
+            <a href="#" class="menu__link dropdown-toggle" aria-haspopup="true" aria-expanded="false">{{ $action.label }}</a>
+            <ul class="dropdown-menu">
+              {{ range $child := $action.children }}
+              {{ $childUrl := trim $child.url "/" }}
+              <li class="dropdown-menu__item{{ if eq $pageUrl $childUrl }} dropdown-menu__item--current{{ end }}">
+                <a href="{{ $child.url | relURL }}" class="dropdown-menu__link">{{ $child.label }}</a>
+              </li>
+              {{ end }}
+            </ul>
+          </li>
+          {{ else }}
           <li class="menu__item{{ if eq $pageUrl $actionUrl }} menu__item--current{{ end }}{{ if ne $action.style "link" }} menu__item--button{{ end }}">
             {{ $include_dict := dict "action" $action }}
             {{ partial "action.html" $include_dict }}
           </li>
+          {{ end }}
           {{ end }}
         </ul>
       </div>

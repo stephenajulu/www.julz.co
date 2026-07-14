@@ -345,6 +345,146 @@ html {
   }
 }
 
+// Dropdown Navigation Styling
+.menu__item--dropdown {
+  position: relative;
+  
+  .dropdown-toggle {
+    display: inline-flex;
+    align-items: center;
+    gap: 4px;
+    cursor: pointer;
+    
+    &::after {
+      content: "▾" !important;
+      font-size: 0.8em !important;
+      transition: transform 0.2s ease !important;
+      border: none !important;
+      position: static !important;
+      transform: none !important;
+      transform-origin: center !important;
+      width: auto !important;
+      height: auto !important;
+      background-color: transparent !important;
+      display: inline-block !important;
+    }
+  }
+
+  // Desktop hover functionality
+  @media only screen and (min-width: 769px) {
+    &:hover {
+      .dropdown-toggle::after {
+        transform: rotate(180deg) !important;
+      }
+      .dropdown-menu {
+        opacity: 1 !important;
+        visibility: visible !important;
+        transform: translateX(-50%) translateY(0) !important;
+      }
+    }
+  }
+}
+
+.dropdown-menu {
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  transform: translateX(-50%) translateY(10px) !important;
+  background: rgba(10, 6, 18, 0.96) !important;
+  border: 1px solid rgba(255, 255, 255, 0.08) !important;
+  border-radius: 8px !important;
+  min-width: 170px !important;
+  padding: 0.5em 0 !important;
+  margin: 0 !important;
+  list-style: none !important;
+  opacity: 0 !important;
+  visibility: hidden !important;
+  transition: all 0.25s cubic-bezier(0.16, 1, 0.3, 1) !important;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5) !important;
+  backdrop-filter: blur(15px) !important;
+  -webkit-backdrop-filter: blur(15px) !important;
+  z-index: 1000 !important;
+  
+  .dropdown-menu__item {
+    padding: 0 !important;
+    margin: 0 !important;
+    width: 100% !important;
+    display: block !important;
+    text-align: center !important;
+    border: none !important;
+    
+    &::after {
+      display: none !important;
+    }
+  }
+
+  .dropdown-menu__link {
+    display: block !important;
+    padding: 0.7em 1.5em !important;
+    color: rgba(255, 255, 255, 0.75) !important;
+    text-decoration: none !important;
+    font-size: 0.95rem !important;
+    font-weight: 500 !important;
+    transition: all 0.2s ease !important;
+    border: none !important;
+    text-align: center !important;
+    width: 100% !important;
+    box-sizing: border-box !important;
+    
+    &::after {
+      display: none !important;
+    }
+    
+    &:hover {
+      color: #ffffff !important;
+      background: rgba(84, 43, 255, 0.2) !important;
+    }
+  }
+  
+  .dropdown-menu__item--current .dropdown-menu__link {
+    color: #ffffff !important;
+    font-weight: 700 !important;
+    background: rgba(84, 43, 255, 0.15) !important;
+  }
+}
+
+// Mobile Dropdown Expansion Handling
+@media only screen and (max-width: 768px) {
+  .menu__item--dropdown {
+    width: 100% !important;
+    display: block !important;
+    text-align: center !important;
+    margin-bottom: 0.5em !important;
+    
+    .dropdown-menu {
+      position: static !important;
+      transform: none !important;
+      width: 100% !important;
+      opacity: 1 !important;
+      visibility: visible !important;
+      background: transparent !important;
+      border: none !important;
+      box-shadow: none !important;
+      padding: 0 !important;
+      max-height: 0 !important;
+      overflow: hidden !important;
+      transition: max-height 0.3s ease-out !important;
+      backdrop-filter: none !important;
+      -webkit-backdrop-filter: none !important;
+    }
+    
+    &.is-active {
+      .dropdown-toggle::after {
+        transform: rotate(180deg) !important;
+      }
+      .dropdown-menu {
+        max-height: 350px !important;
+        margin-top: 0.5em !important;
+      }
+    }
+  }
+}
+
 // Dynamic backgrounds for CTA sections
 .section__bg {
   border-radius: 12px;
@@ -535,6 +675,26 @@ html {
 
     &:active {
       transform: scale(0.97) !important;
+    }
+  }
+
+  @media only screen and (max-width: 480px) {
+    &__group {
+      flex-direction: column !important;
+      border-radius: 12px !important;
+      padding: 8px !important;
+      gap: 8px !important;
+    }
+
+    &__input {
+      text-align: center !important;
+      padding: 0.6em 1em !important;
+    }
+
+    &__button {
+      width: 100% !important;
+      justify-content: center !important;
+      border-radius: 8px !important;
     }
   }
 }

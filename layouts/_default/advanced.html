@@ -12,6 +12,11 @@
 {{ end }}
 
 {{ range $section := .Params.sections }}
+  {{ if $section.custom_css }}
+  <style type="text/css">
+    {{ $section.custom_css | safeCSS }}
+  </style>
+  {{ end }}
   {{ $include_dict := dict "section" $section "Site" $.Site }}
   {{ $component := print $section.type ".html" }}
   {{ partial $component $include_dict }}
