@@ -989,6 +989,10 @@ html {
     background: rgba(255, 255, 255, 0.02) !important;
     border: 1px solid rgba(255, 255, 255, 0.06) !important;
     padding: 3px !important;
+    display: flex !important;
+    align-items: center !important;
+    border-radius: 50px !important; // Absolute pill shape
+    box-sizing: border-box !important;
     
     &:focus-within {
       border-color: rgba(84, 43, 255, 0.4) !important;
@@ -998,12 +1002,70 @@ html {
 
   .newsletter-form__input {
     font-size: 0.9rem !important;
-    padding: 0.6em 1.25em !important;
+    padding: 0.65em 1.25em !important;
+    background: transparent !important;
+    border: none !important;
+    box-sizing: border-box !important;
+    flex-grow: 1 !important;
   }
 
   .newsletter-form__button {
-    padding: 0.6em 1.5em !important;
-    font-size: 0.85rem !important;
+    width: 38px !important;
+    height: 38px !important;
+    min-width: 38px !important;
+    border-radius: 50% !important;
+    padding: 0 !important;
+    margin: 0 !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    background: #542bff !important;
+    color: #ffffff !important;
+    border: none !important;
+    cursor: pointer !important;
+    transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1) !important;
+
+    svg {
+      width: 16px !important;
+      height: 16px !important;
+      stroke: currentColor !important;
+      display: block !important;
+    }
+
+    &:hover {
+      background: #6320d6 !important;
+      transform: scale(1.05) !important;
+      box-shadow: 0 4px 15px rgba(84, 43, 255, 0.4) !important;
+    }
+  }
+
+  // Mobile layout override to maintain horizontal pill design
+  @media only screen and (max-width: 480px) {
+    .newsletter-form__group {
+      flex-direction: row !important;
+      border-radius: 50px !important;
+      padding: 3px !important;
+      gap: 0 !important;
+      width: 100% !important;
+    }
+
+    .newsletter-form__input {
+      text-align: left !important;
+      padding: 0.6em 1em !important;
+      font-size: 0.85rem !important;
+    }
+
+    .newsletter-form__button {
+      width: 34px !important;
+      height: 34px !important;
+      min-width: 34px !important;
+      border-radius: 50% !important;
+      
+      svg {
+        width: 14px !important;
+        height: 14px !important;
+      }
+    }
   }
 }
 
