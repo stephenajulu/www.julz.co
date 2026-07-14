@@ -202,6 +202,9 @@ body, .palette-dark {
       width: 100%;
       margin-left: auto;
       margin-right: auto;
+      padding-left: 1.5rem !important;
+      padding-right: 1.5rem !important;
+      box-sizing: border-box !important;
     }
   }
 }
@@ -988,6 +991,8 @@ html {
   width: 100% !important;
   margin: 2.5em auto !important;
   text-align: center !important;
+  padding: 0 1.25rem !important;
+  box-sizing: border-box !important;
   
   h3 {
     font-size: 1.6rem !important;
@@ -999,6 +1004,7 @@ html {
     line-height: 1.5 !important;
     color: rgba(255, 255, 255, 0.95) !important;
     margin-bottom: 1.5em !important;
+    word-break: break-word !important; // Allow long arrow strings to wrap on mobile
   }
 
   .formula-description {
@@ -1018,8 +1024,10 @@ html {
     background: rgba(255, 255, 255, 0.01) !important;
     border: 1px solid rgba(255, 255, 255, 0.04) !important;
     border-radius: 8px !important;
-    padding: 2em !important;
+    padding: 2em 1em !important;
     box-sizing: border-box;
+    overflow-x: auto !important; // Scroll horizontally on narrow viewports
+    -webkit-overflow-scrolling: touch;
 
     pre {
       background: transparent !important;
@@ -1027,6 +1035,10 @@ html {
       padding: 0 !important;
       margin: 0 !important;
       width: 100% !important;
+      
+      @media only screen and (max-width: 768px) {
+        min-width: 600px !important; // Give Mermaid space to render legibly
+      }
     }
   }
 }
