@@ -26,18 +26,30 @@ But engagement is just the bait. Over time, the algorithm modifies your behavior
 
 When external algorithms dictate what you see, you lose basic human autonomy. We must fight for our cognitive liberty.
 
-The loop weaponizes our biological hardware:
-* variable dopamine loops lock us in compulsive checking, just like slot machines;
-* outrage algorithms prioritize fear and anger to spike engagement times;
-* echo chambers keep us comfortable, destroying critical thought.
+### The Weaponization of Human Psychology
 
-Constant stimulation destroys deep focus. We become reactive. We lose the capacity for long-term planning.
+To break the loop, we must understand how it exploits our evolutionary programming. Human brains are wired to seek novelty, social validation, and safety. These instincts developed over millions of years of evolutionary history, but they are now being weaponized against us:
 
-Sovereignty requires a barrier. We must abandon platforms designed for extraction. I build tools for empowerment.
+First, intermittent variable rewards. Like slot machines, social feeds utilize variable reward schedules. We pull down to refresh, not knowing if the next post will contain a notification, an interesting video, or nothing. This unpredictable reward loop releases dopamine, locking us in a state of compulsive checking.
+
+Second, outrage and conflict stimulation. Algorithmic engines prioritize content that triggers strong emotional reactions, particularly outrage, anger, and fear. These high-energy emotions drive maximum engagement and comments, dividing communities for commercial profit.
+
+Third, echo chamber validation. By feeding us content that confirms our existing biases, the system creates cognitive comfort zones that prevent critical, independent thinking.
+
+When we exist in this constant state of cognitive stimulation, we lose our capacity for deep focus, long-term planning, and deep philosophical contemplation. We become reactive. We lose control of our own attention.
+
+### The Path to Sovereignty: Building Fences, Hosting Minds
+
+Reclaiming autonomy requires that we build a barrier around our minds. We must move away from platforms designed for extraction and adopt platforms designed for empowerment.
 
 At JULZ, founded in Kenya in 2016, we call this Sovereign Engineering. We design software that does not track, collect, or exploit. We focus on:
-* POSSE, where we publish on our own site first and syndicate elsewhere, keeping our records on our own domains;
-* minimal UI/UX at Aju Studio, prioritizing raw typography like Fraunces to encourage calm, focused reading;
-* open-source local-first packages like Julz Insight, offering software with zero telemetry or corporate lock-in.
 
-We build for the long horizon, treating users as sovereign minds. This starts with small choices. Turn off notifications. Host your own data. Build your own infrastructure. The forge is open. Reclaim your autonomy.
+First, POSSE. This stands for Publish on Own Site, Syndicate Elsewhere. It is a core principle of the IndieWeb movement. We believe creators and brands must own their digital presence. Instead of publishing content directly to corporate platforms, we publish on our own independent domain and syndicate links elsewhere. This preserves our records and keeps our sites independent of algorithmic whims.
+
+Second, minimal UI/UX. At Aju Studio, we design interfaces that respect human focus. We prioritize raw, elegant typography like **Fraunces** to encourage calm, focused reading. We reject the cluttered notification feeds, flashing banners, and gamified loops that exploit user psychology.
+
+Third, open-source local-first packages. Through **Julz Insight**, we offer software that businesses and creators host on their own terms. There are no tracking scripts, no telemetry, and no lock-ins.
+
+### Creating for the Horizon
+
+We build for the long horizon, treating users as sovereign minds. This starts with small choices. Turn off notifications. Host your own data. Build your own local-first infrastructure. The forge is open. Reclaim your autonomy.
