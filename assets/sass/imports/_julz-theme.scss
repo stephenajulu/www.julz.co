@@ -157,10 +157,16 @@ body, .palette-dark {
   }
 
   .site-header {
-    margin-bottom: 0 !important;
+    margin-bottom: 2.5rem !important;
     padding-bottom: 1em;
-    padding-top: 1em;
+    padding-top: 1.5em;
     z-index: 10;
+
+    @media only screen and (max-width: 768px) {
+      margin-bottom: 3.5rem !important; // Sufficient whitespace under mobile menu/logo
+      padding-top: 1.25em;
+      padding-bottom: 0.5em;
+    }
   }
 
   .site-footer {
