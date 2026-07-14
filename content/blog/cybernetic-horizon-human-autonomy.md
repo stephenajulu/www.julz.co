@@ -24,7 +24,7 @@ We live inside a cybernetic loop. Systems theory defines a loop as an output fed
 
 But engagement is just the bait. Over time, the algorithm modifies your behavior. It alters your desires, your political views, and your attention span. It encloses your focus. Your mind becomes a rent-producing asset for corporate giants.
 
-When external algorithms dictate what you see, you lose basic human autonomy. I believe we must fight for our cognitive liberty.
+When external algorithms dictate what you see, you lose basic human autonomy. We must fight for our cognitive liberty.
 
 The loop weaponizes our biological hardware:
 * variable dopamine loops lock us in compulsive checking, just like slot machines;
@@ -35,7 +35,7 @@ Constant stimulation destroys deep focus. We become reactive. We lose the capaci
 
 Sovereignty requires a barrier. We must abandon platforms designed for extraction. I build tools for empowerment.
 
-At JULZ, which I started in Kenya in 2016, we call this Sovereign Engineering. We design software that does not track or exploit. We focus on:
+At JULZ, founded in Kenya in 2016, we call this Sovereign Engineering. We design software that does not track, collect, or exploit. We focus on:
 * POSSE, where we publish on our own site first and syndicate elsewhere, keeping our records on our own domains;
 * minimal UI/UX at Aju Studio, prioritizing raw typography like Fraunces to encourage calm, focused reading;
 * open-source local-first packages like Julz Insight, offering software with zero telemetry or corporate lock-in.

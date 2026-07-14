@@ -22,23 +22,23 @@ syndication:
 
 Standard visions of our tech future are boring. Classic cyberpunk offers neon-drenched corporate dystopias. Technology is advanced, but human lives are ruined. On the other side is corporate greenwashing. Solar panels are pasted on giant concrete data centers. They continue to extract Earth's resources under a green badge.
 
-I choose a third path. Solarpunk.
+We choose a third path. Solarpunk.
 
-It is not about pretty illustrations of cities with vines. It is a strict engineering philosophy. How do we design tools that work with nature instead of conquering it? I founded JULZ in Kenya to answer this. Since 2023, The Forge has been our sandbox for physical and digital coexistence.
+It is not about pretty illustrations of cities with vines. It is a strict engineering philosophy. How do we design tools that work with nature instead of conquering it? JULZ was founded in Kenya to explore this. Since 2023, The Forge has been our sandbox for physical and digital coexistence.
 
 To build systems that align with ecology, we must read nature's source code. Biological networks solved resource allocation and routing billions of years ago.
 
 Look at a forest. Trees are not isolated. They connect underground through mycelial fungal webs. This organic network shares nutrients and warns about pests. It routes resources where they are needed most.
 
-When I translate this to software, we skip massive data centers. We build:
+Translating this to software means skipping massive data centers. We build:
 * distributed topologies where nodes automatically reroute traffic if a central hub breaks;
 * metabolic code that dials down CPU cycles during quiet hours to save electricity and hardware lifespans;
 * local-first platforms processing data right on your device, syncing to the grid only when required.
 
-This philosophy shapes physical objects too. Through Aju Studio and Ajulu Labs, I study termite mounds. Termites maintain steady temperatures in extreme heat using passive ventilation. We use these patterns to build silent server enclosures that cool themselves without fans.
+This philosophy shapes physical objects too. Through Aju Studio and Ajulu Labs, we study termite mounds. Termites maintain steady temperatures in extreme heat using passive ventilation. We use these patterns to build silent server enclosures that cool themselves without fans.
 
-I also test 3D printing with local organic materials. Replicating bone structure lets us use less material while maintaining strength.
+We also test 3D printing with local organic materials. Replicating bone structure lets us use less material while maintaining strength.
 
-This requires a rejection of VC funding models. I align with teams like 37Signals and Huly. We build actual software instead of chasing investment rounds. The Hold keeps these projects safe from speculative demands. We build for the long horizon.
+This requires a rejection of VC funding models. We align with teams like 37Signals and Huly. They build actual software instead of chasing investment rounds. The Hold keeps these projects safe from speculative demands. We build for the long horizon.
 
-The solarpunk future is not a dream. I am coding it now. Let us build things that endure.
+The solarpunk future is not a dream. It is being built now. Let us build things that endure.

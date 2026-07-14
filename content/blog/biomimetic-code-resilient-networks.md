@@ -24,9 +24,9 @@ Our digital world is incredibly fragile. We live under the illusion of bulletpro
 
 This fragility stems from our design philosophy. We build networks like hierarchical trees. There is a root, branches, and leaves. Cut a branch, and every leaf on it dies.
 
-I believe we must abandon this top-down architecture. If we want networks to survive the next century, we must study biological systems. They are the oldest network engineers on Earth.
+We must abandon this top-down architecture. To survive the next century, software networks must study biological systems. They are the oldest network engineers on Earth.
 
-At JULZ, which I founded in Kenya in 2016, our sandbox is Ajulu Labs. I study mycelial networks and cellular automata. I want to write software that is decentralized and self-healing. Systems that do not crash.
+At JULZ, founded in Kenya in 2016, our sandbox is Ajulu Labs. We study mycelial networks and cellular automata to write software that is decentralized, self-healing, and resilient.
 
 Under the soil of a healthy forest, mycelium fungal threads connect every plant. This is a resource-sharing highway. It has no central router and no database server. Yet, it manages nutrients across miles of forest floor.
 
@@ -39,6 +39,6 @@ When we apply this to protocols, we build peer-to-peer systems. Your phone syncs
 
 We also study Cellular Automata. These are grids where cells update their states using simple local rules, like Conway's Game of Life. Complex patterns emerge from simple rules.
 
-At Aju Studio, I use these algorithms to route signals on custom circuit boards. We can literally grow structural designs that mimic leaf veins or bone patterns. They are lighter, stronger, and adapt to stress.
+At Aju Studio, we use these algorithms to route signals on custom circuit boards. Builders can literally grow structural designs that mimic leaf veins or bone patterns. They are lighter, stronger, and adapt to stress.
 
 Nature does not rush. It builds slowly, adapts, and outlives empires. If we want our systems to endure, we must align our code with life. Stop writing code like mechanics. Let us forge like ecologists.

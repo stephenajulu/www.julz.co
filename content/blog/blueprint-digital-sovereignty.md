@@ -24,7 +24,7 @@ Progress has always run parallel to enclosure. Look at agricultural land grabs i
 
 In emerging markets, we see a digital commons locked behind foreign gates. When an African bank or agricultural cooperative shifts its database to a proprietary cloud, efficiency is a front. They are renting their sovereignty. Every transaction, click, and user record travels over international trunk lines. Geopolitics shift, corporate boards pivot, and we lose access. It happens overnight.
 
-I started JULZ in Kenya back in 2016 because of this trap. In 2023, I established it as a physical and digital forge. I wanted to engineer independence rather than declare it. We need tools that outlive their makers.
+JULZ was started in Kenya back in 2016 because of this trap. In 2023, we established it as a physical and digital forge. The goal was to engineer independence rather than declare it. Builders need tools that outlive their makers.
 
 ### The Illusion of Leapfrogging
 
@@ -41,6 +41,6 @@ How do we break this lease? Not by retreating into isolation. We do it by buildi
 
 ### Funding Souls, Not Pitch Decks
 
-The venture ecosystem prioritizes scale and quick exits. I look at groups like Acta Ventures and Parable who fund visions and souls instead of slides. At JULZ, we shelter our creations within The Hold. We insulate them from speculative capital so we can build what actually matters.
+The venture ecosystem prioritizes scale and quick exits. We look at groups like Acta Ventures and Parable who fund visions and souls instead of slides. At JULZ, we shelter our creations within The Hold. We insulate them from speculative capital so we can build what actually matters.
 
-When we own the iron and compile the code, we own our future. The forge is hot. I am laying the foundation.
+When we own the iron and compile the code, we own our future. The forge is hot. We are laying the foundation.

@@ -10,7 +10,7 @@ sections:
     class: hero-full-center
     content: |
       <div class="tagline">The Crucible of Creation</div>
-      I built this R&D laboratory to merge digital code with physical hardware. We prototype software, quiet server enclosures, autonomous systems, and skeletal structures. Our goal is simple: engineer tools that respect human focus and ecological health.
+      The Forge functions as an R&D laboratory to merge digital code with physical hardware. We prototype software, quiet server enclosures, autonomous systems, and skeletal structures. Our goal is simple: engineer tools that respect human focus and ecological health.
   - type: grid_section
     section_id: forge-tools
     title: Tools in the Forge
