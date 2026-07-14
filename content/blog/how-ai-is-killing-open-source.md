@@ -4,10 +4,10 @@ subtitle: "From spammed bug bounties to code laundering, the rise of machine-gen
 date: 2026-07-14T08:35:00+03:00
 excerpt: "We analyze the negative impacts of generative AI on the open-source ecosystem, detailing spam PRs, bounty abuse, license laundering, and the retreat behind closed gates."
 layout: post
-image: "/images/cybernetic_autonomy_hero.jpg"
-image_alt: "Cybernetic network representation of code repositories and automated inputs"
-thumb_image: "/images/cybernetic_autonomy_hero.jpg"
-thumb_image_alt: "Cybernetic network representation of code repositories and automated inputs"
+image: "/images/digital_commons_tragedy_hero.jpg"
+image_alt: "A conceptual drawing of code repositories being enclosed behind corporate security gates"
+thumb_image: "/images/digital_commons_tragedy_hero.jpg"
+thumb_image_alt: "A conceptual drawing of code repositories being enclosed behind corporate security gates"
 categories:
   - Technology
   - Sovereignty

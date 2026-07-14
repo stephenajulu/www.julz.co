@@ -4,10 +4,10 @@ subtitle: "Why B2B SaaS monopolies are facing a collapse, and how AI enables ind
 date: 2026-07-14T08:40:00+03:00
 excerpt: "We explore the rise of personal software, the decline of rented SaaS monopolies, and how AI allows creators to build bespoke, disposable software on their own terms."
 layout: post
-image: "/images/personal_ai_hero.jpg"
-image_alt: "Sleek glowing desktop homelab server representing personal software hosting"
-thumb_image: "/images/personal_ai_hero.jpg"
-thumb_image_alt: "Sleek glowing desktop homelab server representing personal software hosting"
+image: "/images/saaspocalypse_hero.jpg"
+image_alt: "A conceptual drawing of corporate SaaS icons crumbling into dust, revealing local custom homelab nodes below"
+thumb_image: "/images/saaspocalypse_hero.jpg"
+thumb_image_alt: "A conceptual drawing of corporate SaaS icons crumbling into dust, revealing local custom homelab nodes below"
 categories:
   - Sovereignty
   - Technology
