@@ -17,7 +17,7 @@
     {{ $section.custom_css | safeCSS }}
   </style>
   {{ end }}
-  {{ $include_dict := dict "section" $section "Site" $.Site }}
+  {{ $include_dict := dict "section" $section "Site" $.Site "page" $ }}
   {{ $component := print $section.type ".html" }}
   {{ partial $component $include_dict }}
 {{ end }}
