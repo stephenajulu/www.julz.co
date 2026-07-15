@@ -53,14 +53,7 @@
       
       {{ .Content }}
       
-      {{ with .Params.syndication }}
-      <div class="post__syndicated-meta" style="margin-bottom: 2em;">
-        <span class="post__meta-label">Syndicated to</span>
-        {{ range . }}
-          <a class="u-syndication taxonomy-pill taxonomy-pill--tag" href="{{ . }}" target="_blank" rel="syndication">{{ . }}</a>
-        {{ end }}
-      </div>
-      {{ end }}
+      
       
       <!-- Sharing Block -->
       <div class="post__share" style="margin-top: 3em; padding-top: 2em; border-top: 1px solid rgba(255, 255, 255, 0.05);">
