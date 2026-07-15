@@ -9,7 +9,7 @@
         {{ $.Params.subtitle }}
       </div>
       {{ end }}
-      <div class="post__meta-header">
+      <div class="post__meta-header" style="display: flex; align-items: center; flex-wrap: wrap; gap: 0.5rem;">
         <time class="published dt-published" datetime="{{ .Date | dateFormat "2006-01-02 15:04" }}">{{ .Date | dateFormat "January 02, 2006" }}</time>
         <span class="post__read-time">• {{ .ReadingTime }} min read</span>
         {{ if .Params.authors }}
@@ -24,6 +24,11 @@
             {{ end }}
           </span>
         {{ end }}
+        <!-- Sabbath Toggle Switch -->
+        <button id="js-sabbath-toggle" class="button button--secondary" style="padding: 0.3em 0.8em; font-size: 0.7rem; border-radius: 4px; background: rgba(255,255,255,0.02); border: 1px solid rgba(255,255,255,0.1); color: rgba(255, 255, 255, 0.7); cursor: pointer; display: inline-flex; align-items: center; gap: 0.4em; margin-left: auto; text-transform: uppercase; letter-spacing: 0.05em; transition: all 0.25s ease;" title="Toggle Sabbath Rest Mode">
+          <svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M6.34 17.66l-1.41 1.41M19.07 4.93l-1.41 1.41"/></svg>
+          <span id="sabbath-toggle-text">Sabbath Off</span>
+        </button>
       </div>
       
       <div class="post__meta-taxonomies">

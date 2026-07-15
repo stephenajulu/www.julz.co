@@ -11,11 +11,30 @@
   </div>
 </header>
 
-<div class="section section--portfolio">
+<div class="section section--portfolio" style="padding-top: 1em;">
   <div class="container container--lg">
+    
+    <!-- Filter Bar -->
+    <div class="insights-filter-bar" style="margin-bottom: 3em; display: flex; flex-wrap: wrap; gap: 0.75rem; align-items: center; background: rgba(255, 255, 255, 0.015); border: 1px solid rgba(255, 255, 255, 0.05); padding: 1.25em; border-radius: 8px; backdrop-filter: blur(8px); -webkit-backdrop-filter: blur(8px);">
+      <span style="font-size: 0.7rem; text-transform: uppercase; letter-spacing: 0.12em; color: rgba(255,255,255,0.4); margin-right: 0.5rem; font-weight: 600;">Filter by:</span>
+      <a href="/blog/" class="taxonomy-pill taxonomy-pill--category active" style="font-size: 0.8rem; text-decoration: none; font-weight: 500;">All Insights</a>
+      
+      {{ range $name, $taxonomy := .Site.Taxonomies.categories }}
+        <a href="/categories/{{ $name | urlize }}/" class="taxonomy-pill taxonomy-pill--category" style="font-size: 0.8rem; text-decoration: none; font-weight: 500;">{{ $name | title }} ({{ $taxonomy.Count }})</a>
+      {{ end }}
+      
+      {{ range $name, $taxonomy := .Site.Taxonomies.tags }}
+        {{ if gt $taxonomy.Count 1 }}
+          <a href="/tags/{{ $name | urlize }}/" class="taxonomy-pill taxonomy-pill--tag" style="font-size: 0.8rem; text-decoration: none;">#{{ $name }} ({{ $taxonomy.Count }})</a>
+        {{ end }}
+      {{ end }}
+    </div>
+
+    <!-- Paginated Grid -->
     <div class="grid post-feed post-feed--col-{{ $col_number }}">
       {{ $posts_sorted := ((.Site.GetPage "section" "/blog").Pages).ByDate.Reverse }}
-      {{ range $post := $posts_sorted }}
+      {{ $paginator := .Paginate $posts_sorted 9 }}
+      {{ range $post := $paginator.Pages }}
       <article class="cell post-card">
         {{ if $post.Params.thumb_image }}
         <a class="post-card__image" href="{{ $post.RelPermalink }}">
@@ -36,6 +55,28 @@
       </article>
       {{ end }}
     </div>
+
+    <!-- Pagination Controls -->
+    {{ if gt .Paginator.TotalPages 1 }}
+    <nav class="pagination-container" style="margin-top: 4em; display: flex; justify-content: center; gap: 0.5rem; align-items: center;">
+      {{ if .Paginator.HasPrev }}
+        <a href="{{ .Paginator.Prev.URL }}" class="button button--secondary" style="padding: 0.5em 1.2em; font-size: 0.8rem; border-radius: 4px; background: rgba(255,255,255,0.02); border: 1px solid rgba(255,255,255,0.1); color: #fff; text-decoration: none;">&larr; Prev</a>
+      {{ end }}
+      
+      {{ range .Paginator.Pagers }}
+        {{ if eq .PageNumber $.Paginator.PageNumber }}
+          <span class="pagination-page active" style="padding: 0.5em 1em; font-size: 0.8rem; border-radius: 4px; background: var(--color-accent, #7c3aed); border: 1px solid var(--color-accent, #7c3aed); color: #fff; font-weight: 600;">{{ .PageNumber }}</span>
+        {{ else }}
+          <a href="{{ .URL }}" class="pagination-page" style="padding: 0.5em 1em; font-size: 0.8rem; border-radius: 4px; background: rgba(255,255,255,0.02); border: 1px solid rgba(255,255,255,0.1); color: rgba(255,255,255,0.7); text-decoration: none; transition: all 0.2s ease;">{{ .PageNumber }}</a>
+        {{ end }}
+      {{ end }}
+      
+      {{ if .Paginator.HasNext }}
+        <a href="{{ .Paginator.Next.URL }}" class="button button--secondary" style="padding: 0.5em 1.2em; font-size: 0.8rem; border-radius: 4px; background: rgba(255,255,255,0.02); border: 1px solid rgba(255,255,255,0.1); color: #fff; text-decoration: none;">Next &rarr;</a>
+      {{ end }}
+    </nav>
+    {{ end }}
+
   </div>
 </div>
 

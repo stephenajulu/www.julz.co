@@ -232,6 +232,7 @@ collections:
       - {label: "Featured Image Alt", name: "image_alt", widget: "string", required: false}
       - {label: "Categories", name: "categories", widget: "list", default: ["Sovereignty"]}
       - {label: "Tags", name: "tags", widget: "list", default: ["tech"]}
+      - {label: "Authors", name: "authors", widget: "relation", collection: "authors", search_fields: ["title"], value_field: "{{slug}}", display_fields: ["title"], multiple: true, default: ["stephen-ajulu"]}
       - {label: "Syndication URLs", name: "syndication", widget: "list", required: false}
       - {label: "Body", name: "body", widget: "markdown"}
 
@@ -292,3 +293,20 @@ collections:
                 fields:
                   - {label: "Label", name: "label", widget: "string"}
                   - {label: "URL Path", name: "url", widget: "string"}
+
+  - name: "authors"
+    label: "Authors"
+    folder: "content/authors"
+    create: true
+    slug: "{{slug}}"
+    fields:
+      - {label: "Name", name: "title", widget: "string"}
+      - {label: "Photo Avatar", name: "photo", widget: "image", required: false}
+      - {label: "Bio / Brief Intro", name: "bio", widget: "text"}
+      - label: "Social Links"
+        name: "socials"
+        widget: "list"
+        required: false
+        fields:
+          - {label: "Platform", name: "platform", widget: "string"}
+          - {label: "Profile URL", name: "url", widget: "string"}

@@ -1284,4 +1284,43 @@ details.expandable-card {
   }
 }
 
+/* Sabbath Mode Styles */
+.sabbath-active {
+  filter: grayscale(100%) contrast(115%) brightness(95%);
+  transition: filter 0.8s cubic-bezier(0.25, 0.8, 0.25, 1);
+
+  .mesh-star,
+  .mesh-star-back,
+  .star-canvas,
+  #mesh-star-canvas {
+    opacity: 0 !important;
+    visibility: hidden !important;
+    transition: opacity 0.8s ease !important;
+  }
+
+  .post__share,
+  .post__syndicated-meta,
+  .section--newsletter,
+  .post__related,
+  .site-header .nav-menu,
+  .taxonomy-pill {
+    display: none !important;
+  }
+
+  .post__content {
+    max-width: 720px;
+    font-family: var(--font-primary, serif);
+    line-height: 1.8;
+    color: #e5e5e5;
+  }
+}
+
+#js-sabbath-toggle {
+  &:hover {
+    background: rgba(255, 255, 255, 0.08) !important;
+    border-color: rgba(255, 255, 255, 0.2) !important;
+  }
+}
+
+
 

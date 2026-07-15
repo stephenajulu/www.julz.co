@@ -171,6 +171,7 @@ function navigateToPage(url) {
           
           // Initialize social sharing buttons on page load
           if (window.initializeShareButtons) window.initializeShareButtons();
+          if (window.initializeSabbathMode) window.initializeSabbathMode();
           
           // Push state to browser history
           history.pushState(null, '', url);
@@ -259,5 +260,40 @@ window.initializeShareButtons = function() {
       }).catch(err => console.warn('Could not copy link:', err));
     };
   }
+};
+
+// Sabbath Mode Initializer
+window.initializeSabbathMode = function() {
+  const sabbathBtn = document.getElementById('js-sabbath-toggle');
+  if (!sabbathBtn) return;
+  
+  const statusText = document.getElementById('sabbath-toggle-text');
+  
+  // Persist Sabbath mode in localStorage
+  const isSabbath = localStorage.getItem('sabbathMode') === 'true';
+  
+  function setSabbathState(active) {
+    if (active) {
+      document.body.classList.add('sabbath-active');
+      if (statusText) statusText.innerHTML = 'Sabbath On';
+      sabbathBtn.style.borderColor = 'var(--color-accent, #7c3aed)';
+      sabbathBtn.style.color = 'var(--color-accent, #7c3aed)';
+      sabbathBtn.style.background = 'rgba(124, 58, 237, 0.05)';
+    } else {
+      document.body.classList.remove('sabbath-active');
+      if (statusText) statusText.innerHTML = 'Sabbath Off';
+      sabbathBtn.style.borderColor = 'rgba(255, 255, 255, 0.1)';
+      sabbathBtn.style.color = 'rgba(255, 255, 255, 0.7)';
+      sabbathBtn.style.background = 'rgba(255, 255, 255, 0.02)';
+    }
+  }
+  
+  setSabbathState(isSabbath);
+  
+  sabbathBtn.onclick = function() {
+    const nowActive = !document.body.classList.contains('sabbath-active');
+    localStorage.setItem('sabbathMode', nowActive);
+    setSabbathState(nowActive);
+  };
 };
 
