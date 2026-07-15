@@ -30,6 +30,8 @@ This model does not represent ownership; it represents a lease on digital existe
 
 To break this loop, I have been brainstorming and designing an alternative path: the **Sovereign Cyberdeck (Mk II)**. This is a blueprint for a pocket-sized, modular, and repairable field terminal that acts as a personal workstation, an independent communication lifeline, and a node in a planetary decentralized computer mesh. It is designed to bridge the physical and digital, the modern and the traditional, creating a resilient technical artifact built to last.
 
+{{< plug post="blueprint-digital-sovereignty" label="Sovereign Blueprint Context" >}}
+
 ---
 
 ### The Physical Architecture: Modular, Repairable, and Biophilic

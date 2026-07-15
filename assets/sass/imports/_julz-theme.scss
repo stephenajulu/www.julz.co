@@ -1259,4 +1259,29 @@ details.expandable-card {
   }
 }
 
+/* Shameless Plug Card */
+.plug-card {
+  &:hover {
+    background: rgba(255, 255, 255, 0.035) !important;
+    border-color: rgba(255, 255, 255, 0.12) !important;
+    transform: translateY(-2px);
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.3);
+
+    .plug-card__title {
+      color: var(--color-accent, #7c3aed) !important;
+    }
+  }
+
+  @media (max-width: 576px) {
+    flex-direction: column !important;
+    align-items: flex-start !important;
+    gap: 1rem !important;
+
+    .plug-card__image-container {
+      width: 100% !important;
+      height: 140px !important;
+    }
+  }
+}
+
 
