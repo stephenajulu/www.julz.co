@@ -36,7 +36,7 @@ Stylesheets are compiled from SASS. In `layouts/_default/baseof.html`, the resou
 The site utilizes two main content layout paradigms:
 
 ### Paradigm A: Advanced Layout (`layout: advanced`)
-Used on the Homepage, About, Manifesto, Collective, and Forge pages. It loops through a dynamic `sections` array declared in frontmatter:
+Used on the Homepage, About, Purpose, Ethos, Join, and Forge pages. It loops through a dynamic `sections` array declared in frontmatter:
 ```yaml
 layout: advanced
 sections:
@@ -119,7 +119,7 @@ Classes are integrated into post structures:
 ## 6. Headless CMS (Decap CMS)
 
 Decap CMS configurations are defined in [static/admin/config.yml](file:///C:/Users/ajulu/Desktop/PROJECTS/Dev%20PROJECTS/www.julz.co/static/admin/config.yml). It maps:
-* **Pages Collection:** File-based collection editing `_index.md`, `about.md`, and `manifesto.md`.
+* **Pages Collection:** File-based collection editing `_index.md`, `about.md`, `purpose.md`, `ethos.md`, and `join.md`.
 * **Blog Collection:** Folder-based collection editing files inside `content/blog/`.
 * **Hold Collection:** Folder-based collection editing files inside `content/hold/`.
 * **Git Gateway:** Connects Decap CMS directly to your GitHub repository using Netlify Identity.

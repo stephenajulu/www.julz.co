@@ -9,7 +9,7 @@ This document contains the exact schemas, layouts, frontmatter fields, and CMS c
 JULZ uses two primary frontmatter paradigms:
 
 ### Paradigm A: Advanced Layout (`layout: advanced`)
-Used for core pages: Home, About, Manifesto, Collective, and Forge. Content is managed dynamically through a list of sections defined in the page frontmatter.
+Used for core pages: Home, About, Purpose, Ethos, Join, and Forge. Content is managed dynamically through a list of sections defined in the page frontmatter.
 
 #### Section Types and Fields
 
@@ -120,13 +120,17 @@ collections:
         label: "About Page"
         name: "about"
         fields: [...]
-      - file: "content/manifesto.md"
-        label: "Manifesto Page"
-        name: "manifesto"
+      - file: "content/purpose.md"
+        label: "Purpose Page"
+        name: "purpose"
         fields: [...]
-      - file: "content/collective.md"
-        label: "The Collective Page"
-        name: "collective"
+      - file: "content/ethos.md"
+        label: "Ethos Page"
+        name: "ethos"
+        fields: [...]
+      - file: "content/join.md"
+        label: "Join Page"
+        name: "join"
         fields: [...]
       - file: "content/forge.md"
         label: "The Forge Page"

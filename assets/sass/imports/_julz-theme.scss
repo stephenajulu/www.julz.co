@@ -1133,4 +1133,130 @@ html {
   }
 }
 
+// Expandable Ethos Values and Operating Principles Cards
+details.expandable-card {
+  background: rgba(255, 255, 255, 0.015) !important;
+  border: 1px solid rgba(255, 255, 255, 0.05) !important;
+  border-radius: 8px !important;
+  margin-bottom: 1em !important;
+  padding: 1em 1.25em !important;
+  transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1) !important;
+  box-sizing: border-box !important;
+  width: 100% !important;
+
+  &[open] {
+    background: rgba(255, 255, 255, 0.03) !important;
+    border-color: rgba(84, 43, 255, 0.3) !important;
+    box-shadow: 0 4px 20px rgba(84, 43, 255, 0.05) !important;
+
+    summary::after {
+      transform: rotate(45deg) !important;
+      color: #542bff !important;
+    }
+  }
+
+  summary {
+    list-style: none !important;
+    outline: none !important;
+    cursor: pointer !important;
+    font-weight: 600 !important;
+    font-size: 1.1rem !important;
+    color: #ffffff !important;
+    display: flex !important;
+    justify-content: space-between !important;
+    align-items: center !important;
+    user-select: none !important;
+
+    &::-webkit-details-marker {
+      display: none !important;
+    }
+
+    &::after {
+      content: "+" !important;
+      font-size: 1.4rem !important;
+      line-height: 1 !important;
+      color: rgba(255, 255, 255, 0.6) !important;
+      transition: transform 0.25s cubic-bezier(0.16, 1, 0.3, 1), color 0.2s !important;
+      display: inline-block !important;
+    }
+    
+    &:hover {
+      color: rgba(84, 43, 255, 0.9) !important;
+      &::after {
+        color: rgba(84, 43, 255, 0.9) !important;
+      }
+    }
+  }
+
+  .details-content {
+    margin-top: 0.75em !important;
+    color: rgba(255, 255, 255, 0.7) !important;
+    line-height: 1.6 !important;
+    font-size: 0.95rem !important;
+    animation: detailsFadeIn 0.3s cubic-bezier(0.16, 1, 0.3, 1) both;
+  }
+}
+
+@keyframes detailsFadeIn {
+  from { opacity: 0; transform: translateY(-4px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+// Pathway Navigation Cards for Story Page
+.pathway-grid {
+  margin: 2.5em 0 !important;
+  display: grid !important;
+  grid-template-columns: 1fr 1fr !important;
+  gap: 1.5rem !important;
+
+  @media only screen and (max-width: 768px) {
+    grid-template-columns: 1fr !important; // Stack on mobile
+    gap: 1rem !important;
+  }
+}
+
+.pathway-card {
+  background: rgba(255, 255, 255, 0.012) !important;
+  border: 1px solid rgba(255, 255, 255, 0.04) !important;
+  padding: 1.75em !important;
+  border-radius: 8px !important;
+  transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1) !important;
+  box-sizing: border-box !important;
+  display: flex !important;
+  flex-direction: column !important;
+  justify-content: space-between !important;
+  align-items: flex-start !important;
+
+  &:hover {
+    background: rgba(255, 255, 255, 0.025) !important;
+    border-color: rgba(84, 43, 255, 0.25) !important;
+    transform: translateY(-2px) !important;
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.2) !important;
+    
+    h3 {
+      color: #542bff !important;
+    }
+  }
+
+  h3 {
+    margin-top: 0 !important;
+    margin-bottom: 0.5em !important;
+    color: #ffffff !important;
+    font-size: 1.25rem !important;
+    transition: color 0.25s ease !important;
+  }
+
+  p {
+    font-size: 0.9rem !important;
+    color: rgba(255, 255, 255, 0.65) !important;
+    line-height: 1.55 !important;
+    margin-bottom: 1.5em !important;
+    flex-grow: 1 !important;
+  }
+
+  .button {
+    margin-top: auto !important;
+  }
+}
+
 

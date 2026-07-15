@@ -31,12 +31,12 @@
                 "style": "dropdown",
                 "children": [
                     {
-                        "label": "Manifesto",
-                        "url": "/manifesto/"
+                        "label": "Purpose",
+                        "url": "/purpose/"
                     },
                     {
-                        "label": "Collective",
-                        "url": "/collective/"
+                        "label": "Ethos",
+                        "url": "/ethos/"
                     },
                     {
                         "label": "Forge",
@@ -45,6 +45,10 @@
                     {
                         "label": "Hold",
                         "url": "/hold/"
+                    },
+                    {
+                        "label": "Join",
+                        "url": "/join/"
                     }
                 ]
             },
