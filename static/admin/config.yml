@@ -162,42 +162,6 @@ collections:
                 widget: "object"
                 fields:
                   - {label: "Content (Markdown)", name: "content", widget: "markdown"}
-      - file: "content/join.md"
-        label: "Join Page"
-        name: "join"
-        fields:
-          - {label: "Title", name: "title", widget: "string"}
-          - {label: "Subtitle", name: "subtitle", widget: "string"}
-          - {label: "Layout", name: "layout", widget: "hidden", default: "advanced"}
-          - {label: "Hide Title Header", name: "hide_title", widget: "boolean", default: true}
-          - {label: "Custom CSS Override", name: "custom_css", widget: "text", required: false}
-          - label: "Sections"
-            name: "sections"
-            widget: "list"
-            types:
-              - label: "Hero Section"
-                name: "hero_section"
-                widget: "object"
-                fields:
-                  - {label: "Section ID", name: "section_id", widget: "string"}
-                  - {label: "Title", name: "title", widget: "string"}
-                  - {label: "Content", name: "content", widget: "markdown"}
-              - label: "Form Section"
-                name: "form_section"
-                widget: "object"
-                fields:
-                  - {label: "Section ID", name: "section_id", widget: "string"}
-                  - {label: "Title", name: "title", widget: "string"}
-                  - {label: "Subtitle", name: "subtitle", widget: "string", required: false}
-                  - {label: "Content", name: "content", widget: "markdown"}
-                  - {label: "Form ID", name: "form_id", widget: "string"}
-                  - {label: "Form Action", name: "form_action", widget: "string"}
-                  - {label: "Submit Button Label", name: "submit_label", widget: "string"}
-              - label: "Content Section"
-                name: "content_section"
-                widget: "object"
-                fields:
-                  - {label: "Content (Markdown)", name: "content", widget: "markdown"}
       - file: "content/forge.md"
         label: "Forge Page"
         name: "forge"

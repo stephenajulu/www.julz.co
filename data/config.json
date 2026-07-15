@@ -45,10 +45,6 @@
                     {
                         "label": "Hold",
                         "url": "/hold/"
-                    },
-                    {
-                        "label": "Join",
-                        "url": "/join/"
                     }
                 ]
             },

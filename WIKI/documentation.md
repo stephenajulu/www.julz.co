@@ -61,7 +61,6 @@ www.julz.co/
 │   ├── about.md                  # Team & Supporting Arms pages
 │   ├── ethos.md                  # Values and operating principles page
 │   ├── forge.md                  # R&D focus pages
-│   ├── join.md                   # Join the Guild application form page
 │   └── purpose.md                # Founding charter & architectural trinity page
 ├── data/
 │   └── config.json               # Navigation links, font setups, and theme scheme
@@ -159,7 +158,7 @@ Queries posts that share similar tags or categories:
 
 We map all Hugo markdown folders and configuration JSON structures into Decap CMS via `static/admin/config.yml`. It supports:
 * **Folder Collections:** `blog` (Journal) and `hold` (The Hold), capturing taxonomies, excerpt text, publish dates, and thumbnail imagery.
-* **File Collections:** Specific pages (Home, About, Purpose, Ethos, Join), allowing editing of hero headers, grid blocks, and customizable call-to-actions dynamically.
+* **File Collections:** Specific pages (Home, About, Purpose, Ethos, Forge), allowing editing of hero headers, grid blocks, and customizable call-to-actions dynamically.
 
 ---
 

@@ -7,7 +7,6 @@ sections:
   - type: hero_section
     section_id: forge-hero
     title: The Forge
-    class: hero-full-center
     content: |
       <div class="tagline">The Prototyping Studio</div>
       Where visionary blueprints are hammered into grounded, local-first code and modular physical hardware.
@@ -49,13 +48,13 @@ sections:
           Prototyping biophilic architectural components and structural materials. Designing buildings that act as active carbon sinks and integrate living systems directly into concrete brutalist and local structures.
   - type: content_section
     content: |
-      <div class="container container--md" style="margin-top: 2em; padding-top: 2em; border-top: 1px solid rgba(255, 255, 255, 0.05); text-align: center;">
-        <p class="formula-text">Explore the other dimensions of our covenant:</p>
-        <div class="button-group" style="justify-content: center; margin-top: 1.5em;">
+      <div class="container container--md" style="margin-top: 2em; padding-top: 2em; border-top: 1px solid rgba(255, 255, 255, 0.05); text-align: left;">
+        <p class="formula-text" style="text-align: left;">Explore the other dimensions of our covenant:</p>
+        <div class="button-group" style="justify-content: flex-start; margin-top: 1.5em;">
           <a href="/purpose/" class="button button--secondary">Our Purpose</a>
           <a href="/ethos/" class="button button--secondary">Our Ethos</a>
           <a href="/about/" class="button button--secondary">Our Story</a>
-          <a href="/join/" class="button button--primary">Join the Guild</a>
+          <a href="/contact/" class="button button--primary">Collaborate with Us</a>
         </div>
       </div>
   - type: cta_section

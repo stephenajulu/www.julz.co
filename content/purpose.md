@@ -7,44 +7,43 @@ sections:
   - type: hero_section
     section_id: purpose-hero
     title: Our Purpose
-    class: hero-full-center
     content: |
       <div class="tagline">The Purpose of JULZ</div>
-      An inquiry into digital autonomy, biophilic architecture, and technical self-reliance.
+      An inquiry into digital autonomy, biophilic design, and regenerative tech-nature harmony.
   - type: content_section
     content: |
       <div class="container container--md">
         <h2>What is JULZ?</h2>
         <p>
-          JULZ is a sovereign tech forge and digital guild. We design, build, and steward tools that empower human autonomy, biophilic architecture, and local-first software. Our focus is to build sustainable products, brands, and systems that harmonize technology with nature, creating technical artifacts engineered for generational endurance.
+          JULZ is a multidisciplinary tech forge and sovereign guild. Our work focuses on sustainable, regenerative innovation that harmonizes technology with nature. We reject the confinement of rigid industrial sectors; instead, we operate with a polymathic agility, developing digital protocols, physical automation, living structures, and ecological systems. While digital sovereignty forms the foundation of our work, our mission is to create physical, digital, and spiritual artifacts that restore balance, promote life, and steward abundance on Earth.
         </p>
 
         <h2>Who is behind JULZ?</h2>
         <p>
-          JULZ is founded and operated solely by <strong>Stephen Ajulu</strong>. Working as an independent builder and brand strategist, he coordinates the vision, codes the systems, and prototypes the hardware. JULZ serves as his personal tech forge, demonstrating that a focused individual can ship civilization-grade tools without reliance on corporate hierarchies or venture capital scale models.
+          Stephen Ajulu is the founder and currently the sole builder and strategist behind the forge. Fusing ICT architecture, modular branding, and local engineering workflows, he lays the foundation for our operations. However, JULZ is not designed as a solitary construct. The ultimate goal is to expand into a collective guild of squad leaders and builders—with the potential for future co-founders to join the mission—collaborating under a shared covenant of creation.
         </p>
 
         <h2>The Founding Charter</h2>
         <p>
-          We begin on a landscape where digital independence has been bartered for transient conveniences. Monopolies own our files, host our sites, and lease us the servers that manage our records. In this model, we do not own our tools; we merely rent access, subject to shifting terms and constant corporate surveillance.
+          We begin on a landscape where technical self-reliance has been surrendered for transient convenience. Centralized platforms lease us our tools, monitor our attention, and detach our lives from the biological systems of the Earth. Technology was promised to liberate; instead, it has created new dependencies.
         </p>
         <p>
-          JULZ is founded on the conviction that a different architecture is possible. We believe that technology should be an instrument of individual sovereignty and biophilic harmony, not a mechanism of digital dependency. We exist to engineer alternative systems that restore agency and balance.
+          JULZ is built to demonstrate that another architecture is possible. We believe technical innovation must be regenerative, harmonizing human capability with nature’s structural designs. We exist to restore balance, reversing the ecological and human fragmentation of the industrial era.
         </p>
         <p>
-          This is a covenant of creation designed to endure. Instead of chasing fast capital or pursuing rapid exit strategies, we focus on building artifacts that can run offline, function locally, and serve communities for decades. Our timeline is measured in generations, not financial quarters.
+          This is a covenant of creation designed to endure. We choose to build tools that run offline, function locally, and serve communities for generations. Rather than chasing short-term valuations or rapid exits, we focus our energy on technical artifacts that remain useful and resilient over decades.
         </p>
         <p>
-          Our approach fuses digital precision with organic principles. We design systems that respect physical boundaries and resource constraints, mirroring the efficiency of natural networks. Technology must be biophilic, meaning it supports life, protects focus, and integrates seamlessly with the natural world.
+          Our methodology bridges the physical and the digital, the mainstream and the niche, the traditional and the modern. We explore technical systems that mimic natural growth, respecting resource limits while expanding local capabilities. We design interfaces that honor reading focus and cognitive clarity.
         </p>
         <p>
-          In a landscape crowded with bloated platforms and attention‑mining interfaces, we choose quiet software and modular designs. We build simple, robust architectures that run on local iron, private databases, and open‑source protocols. We respect your reading time and your mental clarity.
+          We are polymathic by default. We do not restrict our builds to a single sector or market. In our workspace, software protocols, physical structures, automation modules, and ecological systems are treated as interconnected facets of a single, unified craft.
         </p>
         <p>
-          The work is crafted with deep responsibility. As a single-builder forge, we show that civilization-grade tools can be engineered without corporate hierarchies or extractive systems. Building in the open allows our processes to remain transparent, inviting public audit, refinement, and collaboration.
+          The work is guided by responsibility. Working in the open ensures our code, designs, and processes are transparent and auditable. Demonstrating that focused teams can build civilization-grade tools encourages others to reclaim custody of their technical infrastructure.
         </p>
         <p>
-          Reclaiming our digital lives requires transitioning from passive consumers to active stewards. JULZ is the sandbox where this transition is forged into functional code, physical prototypes, and long-term covenants. The tools of sovereignty are ready, and the forge is open for the journey ahead.
+          Reclaiming our digital and physical agency requires transitioning from consumption to active stewardship. JULZ is the sandbox where this transition is forged. The tools of sovereignty are ready, and we invite aligned minds to join us in engineering a balanced horizon.
         </p>
 
         <h2>The Architectural Trinity</h2>
@@ -57,20 +56,9 @@ sections:
           <li><strong>The Collective:</strong> The alignment hub where builder cohorts and tactical squad networks collaborate on independent, sovereign projects.</li>
         </ul>
 
-        <h2>The Operational Pipeline</h2>
-        <p>
-          Our project lifecycle progresses through four distinct operational phases, aligning vision with execution:
-        </p>
-        <ul>
-          <li><strong>Ethos:</strong> The guiding value system and expandable principles that establish the standards of integrity for every build.</li>
-          <li><strong>Join:</strong> The alignment portal where builders, storytellers, and designers submit their expertise to co-create.</li>
-          <li><strong>Forge:</strong> The R&D laboratory where conceptual designs are fabricated into functional local-first software and physical devices.</li>
-          <li><strong>Hold:</strong> The custody vault that stewards and maintains our assets, securing long-term technical resilience.</li>
-        </ul>
-
         <h2>The Supporting Arms</h2>
         <p>
-          The active R&D and execution branches that power the daily creations of the forge:
+          The active execution branches that power the daily creations of the forge:
         </p>
         <ul>
           <li><strong>Aju Studio:</strong> Product design, digital UI/UX, brand identity layouts, and biophilic architectural planning.</li>
@@ -78,12 +66,12 @@ sections:
           <li><strong>Ajulu Labs:</strong> Experimental technology development, homelab server testing, and local AI prototyping.</li>
         </ul>
 
-        <div style="margin-top: 3.5em; padding-top: 2em; border-top: 1px solid rgba(255, 255, 255, 0.05); text-align: center;">
-          <p class="formula-text">Explore the other dimensions of our covenant:</p>
-          <div class="button-group" style="justify-content: center; margin-top: 1.5em;">
+        <div style="margin-top: 3.5em; padding-top: 2em; border-top: 1px solid rgba(255, 255, 255, 0.05); text-align: left;">
+          <p class="formula-text" style="text-align: left;">Explore the other dimensions of our covenant:</p>
+          <div class="button-group" style="justify-content: flex-start; margin-top: 1.5em;">
             <a href="/ethos/" class="button button--secondary">Our Ethos</a>
             <a href="/about/" class="button button--secondary">Our Story</a>
-            <a href="/join/" class="button button--primary">Join the Guild</a>
+            <a href="/contact/" class="button button--primary">Collaborate with Us</a>
           </div>
         </div>
       </div>

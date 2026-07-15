@@ -7,7 +7,6 @@ sections:
   - type: hero_section
     section_id: ethos-hero
     title: Our Ethos
-    class: hero-full-center
     content: |
       <div class="tagline">The JULZ Code</div>
       The alignment of values and operating principles that guide every prototype, brand, and infrastructure we forge.
@@ -22,7 +21,7 @@ sections:
         <details class="expandable-card">
           <summary>Excellence</summary>
           <div class="details-content">
-            We reject the culture of the hurried, minimum viable product. We believe in high craft, rigorous testing, clean typography, and structural integrity. Every detail, from a hidden database query to the tactile bezel of a physical device, is executed to a premium, civilization-grade standard.
+            We reject the culture of the hurried, minimum viable product. We believe in high craft, rigorous testing, clean typography, and structural integrity. Every detail, from a hidden database query to the tactile layout of a physical device, is executed to a premium, civilization-grade standard.
           </div>
         </details>
 
@@ -116,12 +115,12 @@ sections:
           </div>
         </details>
 
-        <div style="margin-top: 3.5em; padding-top: 2em; border-top: 1px solid rgba(255, 255, 255, 0.05); text-align: center;">
-          <p class="formula-text">Explore the other dimensions of our covenant:</p>
-          <div class="button-group" style="justify-content: center; margin-top: 1.5em;">
+        <div style="margin-top: 3.5em; padding-top: 2em; border-top: 1px solid rgba(255, 255, 255, 0.05); text-align: left;">
+          <p class="formula-text" style="text-align: left;">Explore the other dimensions of our covenant:</p>
+          <div class="button-group" style="justify-content: flex-start; margin-top: 1.5em;">
             <a href="/purpose/" class="button button--secondary">Our Purpose</a>
             <a href="/about/" class="button button--secondary">Our Story</a>
-            <a href="/join/" class="button button--primary">Join the Guild</a>
+            <a href="/contact/" class="button button--primary">Collaborate with Us</a>
           </div>
         </div>
       </div>

@@ -128,10 +128,6 @@ collections:
         label: "Ethos Page"
         name: "ethos"
         fields: [...]
-      - file: "content/join.md"
-        label: "Join Page"
-        name: "join"
-        fields: [...]
       - file: "content/forge.md"
         label: "The Forge Page"
         name: "forge"

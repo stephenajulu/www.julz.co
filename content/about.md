@@ -7,7 +7,6 @@ sections:
   - type: hero_section
     section_id: about-hero
     title: Our Story
-    class: hero-full-center
     content: |
       <div class="tagline">Behind the Forge</div>
       The journey of building sustainable, civilization-grade systems designed to endure.
@@ -24,12 +23,12 @@ sections:
 
         <h2>The Founder</h2>
         <p>
-          <strong>Stephen Ajulu</strong> is the sole systems builder, technologist, and brand strategist behind JULZ. Fusing ICT infrastructure, modular branding, and local prototyping workflows, he acts as the singular coordinator of the forge. Stephen operates JULZ as a personal crucible, demonstrating that a focused independent builder can design and ship civilization-grade tools that outlast their creators.
+          <strong>Stephen Ajulu</strong> is the founder and currently the sole builder and strategist behind the forge. Fusing ICT architecture, modular branding, and local engineering workflows, he lays the foundation for our operations. However, JULZ is not designed as a solitary construct. The ultimate goal is to expand into a collective guild of squad leaders and builders—with the potential for future co-founders to join the mission—collaborating under a shared covenant of creation.
         </p>
 
         <h2>The Four Coordinates of the Guild</h2>
         <p>
-          The architecture of JULZ is modular, enabling users to explore our vision, verify our alignment, review our R&D roadmaps, and join our active squads. We invite you to follow the pathways below to decode our entire ecosystem:
+          The architecture of JULZ is modular, enabling users to explore our vision, verify our alignment, review our R&D roadmaps, and connect with us. We invite you to follow the pathways below to decode our entire ecosystem:
         </p>
 
         <div class="pathway-grid" style="margin: 2.5em 0; display: grid; grid-template-columns: 1fr 1fr; gap: 1.5rem;">
@@ -55,11 +54,11 @@ sections:
             <a href="/forge/" class="button button--secondary" style="font-size: 0.8rem; padding: 0.5em 1em;">The Forge →</a>
           </div>
           <div class="pathway-card" style="background: rgba(255, 255, 255, 0.015); border: 1px solid rgba(255, 255, 255, 0.05); padding: 1.5em; border-radius: 8px; transition: all 0.3s ease;">
-            <h3 style="margin-top: 0; color: #ffffff;">4. The Alliance</h3>
+            <h3 style="margin-top: 0; color: #ffffff;">4. The Collaboration</h3>
             <p style="font-size: 0.9rem; color: rgba(255, 255, 255, 0.7); line-height: 1.5; margin-bottom: 1.25em;">
-              Are you a builder, storyteller, or bio-designer? Complete our alignment application form and join our network.
+              Are you a builder, storyteller, or designer looking to co-create? Connect through our unified contact form to collaborate.
             </p>
-            <a href="/join/" class="button button--primary" style="font-size: 0.8rem; padding: 0.5em 1em;">Join the Guild →</a>
+            <a href="/contact/" class="button button--primary" style="font-size: 0.8rem; padding: 0.5em 1em;">Collaborate with Us →</a>
           </div>
         </div>
       </div>

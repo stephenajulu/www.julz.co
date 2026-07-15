@@ -26,12 +26,10 @@ sections:
         label: What are you looking for?
         default_value: Please select
         options:
-          - The Forge
-          - The Collective
-          - The Hold
-          - Projects
-          - Investment
-          - Careers
+          - The Forge (R&D Prototyping)
+          - Join the Guild (The Collective)
+          - The Hold (Venture Stewardship)
+          - General Inquiry
           - Other
       - input_type: textarea
         name: message
