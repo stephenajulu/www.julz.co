@@ -51,4 +51,6 @@ Faced with automated spam and value extraction, open-source startups are shiftin
 
 At the same time, venture-backed open-source projects face immense pressure to sell out. **Astral**, the creator of fast Python tools like Ruff and uv, raised millions in venture capital. In a market dominated by AI giants, well-funded startups face buyout pressures. If you cannot beat the infrastructure scale of the tech giants, the logical venture exit is to join them, merging open-source projects into proprietary corporate ecosystems.
 
+{{< plug post="personal-ai-infrastructure-cognitive-sovereignty" label="Cognitive Sovereignty Context" >}}
+
 At JULZ, we believe that open-source is a sacred stewardship. But to survive the AI invasion, we must change how we build. We must protect our repositories from automated crawlers, support independent maintainers, and write software designed for human networks. The digital commons is under threat, and it is time to build fences around our code.

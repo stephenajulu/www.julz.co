@@ -51,6 +51,8 @@ Cellular automata demonstrate how complex, highly organized, and lifelike patter
 
 At Aju Studio, we use cellular automata algorithms to optimize signal routing on custom circuit boards. We can also grow structural designs that replicate leaf veins or bone structures. These biomorphic patterns distribute mechanical load dynamically. They are lighter, stronger, and adapt to stress, requiring up to 40% less raw material than standard geometric shapes.
 
+{{< plug post="solarpunk-architectures-tech-nature" label="Solarpunk Architecture Context" >}}
+
 ### Crafting Enduring Systems
 
 Our commitment to biomimicry is not just a scientific interest: it is a moral responsibility. We build systems that protect and empower. We reject the short-term monetization pressure that forces software teams to release rushed, insecure platforms. 

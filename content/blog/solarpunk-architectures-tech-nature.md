@@ -29,6 +29,8 @@ It is not about pretty illustrations of cities with vines. It is a strict engine
 
 To build systems that align with ecology, we must read nature's source code. Biological networks solved resource allocation and routing billions of years ago.
 
+{{< plug post="biomimetic-code-resilient-networks" label="Biomimetic Code Context" >}}
+
 ### Learning from the Forest Floor: Biomimicry in Code
 
 Consider a forest. Trees are not isolated. They connect underground through mycelial fungal webs. This organic network shares nutrients and warns about pests. It routes resources where they are needed most.

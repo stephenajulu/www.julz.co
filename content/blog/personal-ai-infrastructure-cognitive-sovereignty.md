@@ -27,6 +27,8 @@ We ignore the trade. This is a massive cognitive mining operation. We trade our 
 
 True independence requires cognitive sovereignty. This starts with owning the computing hardware.
 
+{{< plug post="sovereign-cyberdeck-decentralized-mesh" label="Sovereign Hardware Context" >}}
+
 ### The Corporate Brain Lock
 
 Centralized AI tools create three silent traps:

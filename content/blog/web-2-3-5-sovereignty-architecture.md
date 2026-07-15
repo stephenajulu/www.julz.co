@@ -72,6 +72,8 @@ Web5 solves the problem of digital sovereignty by bypassing blockchains entirely
 
 As **Mike Brock** explained, Web5 is designed to bring a "local-first" philosophy to the internet. If you use a Web5 application, your data lives on your own DWN. Applications are merely thin layers of code running on top of your personal storage node. If you switch applications, you do not lose your files, because the app never held them in the first place.
 
+{{< plug post="the-era-of-personal-software" label="Personal Software Era Context" >}}
+
 ---
 
 ### The Evolution of the Web

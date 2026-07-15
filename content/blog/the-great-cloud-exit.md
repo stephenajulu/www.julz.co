@@ -60,6 +60,8 @@ To bridge this gap, a new generation of **sovereign operating systems** has emer
 
 These operating systems represent a shift in human-computer interface design. They take the ease of SaaS and apply it to self-hosted software, stripping away the complexity while preserving the privacy and ownership of the underlying data.
 
+{{< plug post="the-era-of-personal-software" label="Personal Software Era Context" >}}
+
 ### The Path Forward: Owning Our Context
 
 At **JULZ**, founded in Kenya in 2016 and established in 2023, this movement is the very core of **The Forge**. We do not believe that the future of humanity lies in thin clients connecting to massive, centralized, overseas mainframe grids. That is a return to the computing topologies of the 1970s, wrapped in neon lights.
