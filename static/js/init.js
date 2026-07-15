@@ -169,6 +169,9 @@ function navigateToPage(url) {
           // Update menu active links highlight
           updateActiveNavLink(url);
           
+          // Initialize social sharing buttons on page load
+          if (window.initializeShareButtons) window.initializeShareButtons();
+          
           // Push state to browser history
           history.pushState(null, '', url);
           
@@ -190,3 +193,41 @@ function navigateToPage(url) {
 window.addEventListener('popstate', function() {
   navigateToPage(window.location.pathname);
 });
+
+// Web Share API and Copy Link Initializer
+window.initializeShareButtons = function() {
+  const webshareBtn = document.getElementById('js-webshare-btn');
+  const copylinkBtn = document.getElementById('js-copylink-btn');
+  
+  if (webshareBtn) {
+    if (navigator.share) {
+      webshareBtn.style.display = 'inline-flex';
+      // Use clean event handler binding to avoid duplicates
+      webshareBtn.onclick = function() {
+        navigator.share({
+          title: document.title,
+          text: document.querySelector('meta[name="description"]')?.getAttribute('content') || '',
+          url: window.location.href
+        }).catch(err => console.log('Share failed:', err));
+      };
+    } else {
+      webshareBtn.style.display = 'none';
+    }
+  }
+  
+  if (copylinkBtn) {
+    copylinkBtn.onclick = function() {
+      navigator.clipboard.writeText(window.location.href).then(() => {
+        const textSpan = document.getElementById('copylink-btn-text');
+        if (textSpan) {
+          const originalHTML = textSpan.innerHTML;
+          textSpan.innerHTML = 'Link Copied!';
+          setTimeout(() => {
+            textSpan.innerHTML = originalHTML;
+          }, 2000);
+        }
+      }).catch(err => console.warn('Could not copy link:', err));
+    };
+  }
+};
+

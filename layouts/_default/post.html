@@ -54,13 +54,66 @@
       {{ .Content }}
       
       {{ with .Params.syndication }}
-      <div class="post__syndicated-meta">
+      <div class="post__syndicated-meta" style="margin-bottom: 2em;">
         <span class="post__meta-label">Syndicated to</span>
         {{ range . }}
           <a class="u-syndication taxonomy-pill taxonomy-pill--tag" href="{{ . }}" target="_blank" rel="syndication">{{ . }}</a>
         {{ end }}
       </div>
       {{ end }}
+      
+      <!-- Sharing Block -->
+      <div class="post__share" style="margin-top: 3em; padding-top: 2em; border-top: 1px solid rgba(255, 255, 255, 0.05);">
+        <h4 class="post__share-title" style="margin-top: 0; margin-bottom: 1em; font-size: 0.8rem; text-transform: uppercase; letter-spacing: 0.1em; color: rgba(255,255,255,0.4);">Share this Insight</h4>
+        <div class="post__share-buttons" style="display: flex; flex-wrap: wrap; gap: 0.75rem; align-items: center;">
+          <!-- Web Share API Button -->
+          <button id="js-webshare-btn" class="button button--secondary" style="display: none; padding: 0.5em 1em; font-size: 0.8rem; border-radius: 4px; background: rgba(255,255,255,0.02); border: 1px solid rgba(255,255,255,0.1); color: #fff; cursor: pointer; align-items: center; gap: 0.5em;" title="Share via your device">
+            <span style="display: inline-flex; align-items: center; gap: 0.5em;">
+              <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/><line x1="8.59" y1="13.51" x2="15.42" y2="17.49"/><line x1="15.41" y1="6.51" x2="8.59" y2="10.49"/></svg>
+              Share Page
+            </span>
+          </button>
+          
+          <!-- Normal Social Sharing Links -->
+          <a href="https://twitter.com/intent/tweet?text={{ urlquery .Title }}&url={{ .Permalink }}" target="_blank" rel="noopener noreferrer" class="button button--secondary share-btn" style="padding: 0.5em 1.2em; font-size: 0.8rem; border-radius: 4px; background: rgba(255,255,255,0.02); border: 1px solid rgba(255,255,255,0.1); color: rgba(255,255,255,0.8); text-decoration: none;" title="Share on X">
+            <span>X (Twitter)</span>
+          </a>
+          
+          <a href="https://www.facebook.com/sharer/sharer.php?u={{ .Permalink }}" target="_blank" rel="noopener noreferrer" class="button button--secondary share-btn" style="padding: 0.5em 1.2em; font-size: 0.8rem; border-radius: 4px; background: rgba(255,255,255,0.02); border: 1px solid rgba(255,255,255,0.1); color: rgba(255,255,255,0.8); text-decoration: none;" title="Share on Facebook">
+            <span>Facebook</span>
+          </a>
+          
+          <a href="https://www.linkedin.com/sharing/share-offsite/?url={{ .Permalink }}" target="_blank" rel="noopener noreferrer" class="button button--secondary share-btn" style="padding: 0.5em 1.2em; font-size: 0.8rem; border-radius: 4px; background: rgba(255,255,255,0.02); border: 1px solid rgba(255,255,255,0.1); color: rgba(255,255,255,0.8); text-decoration: none;" title="Share on LinkedIn">
+            <span>LinkedIn</span>
+          </a>
+
+          <a href="https://pinterest.com/pin/create/button/?url={{ .Permalink }}&media={{ if .Params.image }}{{ .Params.image | absURL }}{{ else }}{{ "/images/logo.png" | absURL }}{{ end }}&description={{ urlquery (.Params.excerpt | default .Summary) }}" target="_blank" rel="noopener noreferrer" class="button button--secondary share-btn" style="padding: 0.5em 1.2em; font-size: 0.8rem; border-radius: 4px; background: rgba(255,255,255,0.02); border: 1px solid rgba(255,255,255,0.1); color: rgba(255,255,255,0.8); text-decoration: none;" title="Share on Pinterest">
+            <span>Pinterest</span>
+          </a>
+          
+          <a href="https://api.whatsapp.com/send?text={{ urlquery (print .Title " " .Permalink) }}" target="_blank" rel="noopener noreferrer" class="button button--secondary share-btn" style="padding: 0.5em 1.2em; font-size: 0.8rem; border-radius: 4px; background: rgba(255,255,255,0.02); border: 1px solid rgba(255,255,255,0.1); color: rgba(255,255,255,0.8); text-decoration: none;" title="Share on WhatsApp">
+            <span>WhatsApp</span>
+          </a>
+          
+          <a href="https://t.me/share/url?url={{ .Permalink }}&text={{ urlquery .Title }}" target="_blank" rel="noopener noreferrer" class="button button--secondary share-btn" style="padding: 0.5em 1.2em; font-size: 0.8rem; border-radius: 4px; background: rgba(255,255,255,0.02); border: 1px solid rgba(255,255,255,0.1); color: rgba(255,255,255,0.8); text-decoration: none;" title="Share on Telegram">
+            <span>Telegram</span>
+          </a>
+          
+          <button onclick="window.print()" class="button button--secondary" style="padding: 0.5em 1em; font-size: 0.8rem; border-radius: 4px; background: rgba(255,255,255,0.02); border: 1px solid rgba(255,255,255,0.1); color: #fff; cursor: pointer; display: inline-flex; align-items: center; gap: 0.5em;" title="Print Article">
+            <span style="display: inline-flex; align-items: center; gap: 0.5em;">
+              <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 6 2 18 2 18 9"/><path d="M6 18H4a2 2 0 0 1-2-2v-5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2h-2"/><rect x="6" y="14" width="12" height="8"/></rect></svg>
+              Print
+            </span>
+          </button>
+          
+          <button id="js-copylink-btn" class="button button--secondary" style="padding: 0.5em 1em; font-size: 0.8rem; border-radius: 4px; background: rgba(255,255,255,0.02); border: 1px solid rgba(255,255,255,0.1); color: #fff; cursor: pointer; display: inline-flex; align-items: center; gap: 0.5em;" title="Copy Link to Clipboard">
+            <span id="copylink-btn-text" style="display: inline-flex; align-items: center; gap: 0.5em;">
+              <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"/><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"/></svg>
+              Copy Link
+            </span>
+          </button>
+        </div>
+      </div>
     </div>
   </div>
   <footer class="post__meta">
