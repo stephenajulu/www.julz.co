@@ -4,6 +4,7 @@ subtitle: "Why renting your intelligence from corporate LLM providers is a cogni
 date: 2026-07-14T08:10:00+03:00
 excerpt: "We analyze the privacy and cognitive risks of centralized AI systems, and lay out the architecture for self-hosted, personal AI engines using ideas from Daniel Miessler."
 layout: post
+authors: ["stephen-ajulu"]
 image: "/images/personal_ai_hero.jpg"
 image_alt: "Sleek glowing desktop homelab server with a projecting holographic neural assistant"
 thumb_image: "/images/personal_ai_hero.jpg"

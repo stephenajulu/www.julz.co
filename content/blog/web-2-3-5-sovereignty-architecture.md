@@ -4,6 +4,7 @@ subtitle: "Analyzing the technical paradigms of decentralized web models, refere
 date: 2026-07-15T11:35:00+03:00
 excerpt: "We examine the architectural shift from centralized platform silos (Web 2.0) and blockchain networks (Web3) to tokenless, sovereign Decentralized Web Platforms (Web5), pulling insights from industry leaders."
 layout: post
+authors: ["stephen-ajulu"]
 image: "/images/web_evolution_sovereignty.jpg"
 image_alt: "An abstract representation of the evolution of the web featuring glowing structures for Web 2.0, Web3, and Web5"
 thumb_image: "/images/web_evolution_sovereignty.jpg"

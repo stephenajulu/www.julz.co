@@ -4,6 +4,7 @@ subtitle: "Beyond the dystopia of cyberpunk and the vanity of greenwashing: how 
 date: 2026-07-14T08:05:00+03:00
 excerpt: "We explore the core design philosophy of Solarpunk, drawing lessons from nature to build decentralized networks, low-power digital systems, and sustainable physical architectures."
 layout: post
+authors: ["stephen-ajulu"]
 image: "/images/solarpunk_architecture_hero.jpg"
 image_alt: "Solarpunk city building covered in vertical gardens with a glowing sun"
 thumb_image: "/images/solarpunk_architecture_hero.jpg"

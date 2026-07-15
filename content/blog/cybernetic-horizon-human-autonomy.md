@@ -4,6 +4,7 @@ subtitle: "How the attention economy exploits human behavioral psychology to mod
 date: 2026-07-14T08:20:00+03:00
 excerpt: "We examine the cybernetic loop of algorithmic feedback, analyze how it modifies human behavior, and explore methods for protecting our cognitive liberty."
 layout: post
+authors: ["stephen-ajulu"]
 image: "/images/cybernetic_autonomy_hero.jpg"
 image_alt: "Profile of a person looking at a starry horizon with geometric holographic overlays representing cognitive liberty"
 thumb_image: "/images/cybernetic_autonomy_hero.jpg"

@@ -4,6 +4,7 @@ subtitle: "Why modern companies are choosing managed open-source platforms over 
 date: 2026-07-14T08:30:00+03:00
 excerpt: "We analyze how managed open-source business infrastructure is transforming modern enterprise, and how Julz Insight operates as Africa’s Digital Sovereignty Engine."
 layout: post
+authors: ["stephen-ajulu"]
 image: "/images/open_source_hero.jpg"
 image_alt: "Futuristic network architecture diagram on dark glassmorphic panels representing open source"
 thumb_image: "/images/open_source_hero.jpg"

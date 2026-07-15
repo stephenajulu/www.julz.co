@@ -215,7 +215,14 @@ window.initializeShareButtons = function() {
   const encodedDesc = encodeURIComponent(description);
   const encodedImage = encodeURIComponent(ogImage);
   
-  if (shareX) shareX.href = `https://twitter.com/intent/tweet?text=${encodedTitle}&url=${encodedUrl}`;
+  if (shareX) {
+    const via = shareX.getAttribute('data-via') || 'stephenajulu';
+    const tags = shareX.getAttribute('data-tags') || '';
+    let xShareUrl = `https://twitter.com/intent/tweet?text=${encodedTitle}&url=${encodedUrl}`;
+    if (via) xShareUrl += `&via=${encodeURIComponent(via)}`;
+    if (tags) xShareUrl += `&hashtags=${encodeURIComponent(tags)}`;
+    shareX.href = xShareUrl;
+  }
   if (shareFB) shareFB.href = `https://www.facebook.com/sharer/sharer.php?u=${encodedUrl}`;
   if (shareLI) shareLI.href = `https://www.linkedin.com/sharing/share-offsite/?url=${encodedUrl}`;
   if (sharePin) sharePin.href = `https://pinterest.com/pin/create/button/?url=${encodedUrl}&media=${encodedImage}&description=${encodedDesc}`;

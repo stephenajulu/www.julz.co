@@ -4,6 +4,7 @@ subtitle: "Why our current digital networks are fragile, and how biological netw
 date: 2026-07-14T08:15:00+03:00
 excerpt: "We explore the fragile state of centralized server infrastructures, and show how we can build self-healing networks by modeling mycelial biological networks and cellular automata."
 layout: post
+authors: ["stephen-ajulu"]
 image: "/images/biomimetic_network_hero.jpg"
 image_alt: "Bioluminescent mycelial network growing underground pulsating like fiber optic data cables"
 thumb_image: "/images/biomimetic_network_hero.jpg"

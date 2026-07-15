@@ -4,6 +4,7 @@ subtitle: "A deep dive into pocket-sized field terminals, collaborative VRAM clu
 date: 2026-07-15T11:55:00+03:00
 excerpt: "I explore the detailed architectural blueprint of a modular, repairable cyberdeck designed to act as a personal Linux workstation, an SDR scanner, and an AI terminal that borrows VRAM from nearby mesh nodes."
 layout: post
+authors: ["stephen-ajulu"]
 image: "/images/sovereign_cyberdeck.jpg"
 image_alt: "A close-up of a modular cyberdeck showing a sliding landscape keyboard and modular accessories on a hacker workbench"
 thumb_image: "/images/sovereign_cyberdeck.jpg"

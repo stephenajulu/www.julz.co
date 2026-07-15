@@ -2,10 +2,11 @@ title: Stackbit Agency Theme
 baseURL: /
 ignoreErrors: ["error-disable-taxonomy"]
 taxonomies:
-  stub: stub
+  category: categories
+  tag: tags
+  author: authors
 disableKinds:
   - RSS
-  - taxonomy
 markup:
   goldmark:
     renderer:

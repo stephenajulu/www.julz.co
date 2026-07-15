@@ -12,6 +12,18 @@
       <div class="post__meta-header">
         <time class="published dt-published" datetime="{{ .Date | dateFormat "2006-01-02 15:04" }}">{{ .Date | dateFormat "January 02, 2006" }}</time>
         <span class="post__read-time">• {{ .ReadingTime }} min read</span>
+        {{ if .Params.authors }}
+          <span class="post__author-meta">• By 
+            {{ range $index, $author := .Params.authors }}
+              {{ if $index }}, {{ end }}
+              {{ $authorSlug := $author | urlize }}
+              {{ $authorPage := $.Site.GetPage (print "/authors/" $authorSlug) }}
+              <a href="/authors/{{ $authorSlug }}/" class="post__author-link" style="color: var(--color-accent, #7c3aed); text-decoration: none; font-weight: 500;">
+                {{ if $authorPage }}{{ $authorPage.Title }}{{ else }}{{ replace $author "-" " " | title }}{{ end }}
+              </a>
+            {{ end }}
+          </span>
+        {{ end }}
       </div>
       
       <div class="post__meta-taxonomies">
@@ -29,10 +41,20 @@
         {{ end }}
       </div>
       
-      <div class="p-author h-card" style="display:none;">
-        <a class="u-url p-name" href="/">Stephen Ajulu</a>
-        <img class="u-photo" src="/images/1653516600275.jpg" alt="Stephen Ajulu" />
-      </div>
+      {{ if .Params.authors }}
+        {{ range .Params.authors }}
+          {{ $authorSlug := . | urlize }}
+          {{ $authorPage := $.Site.GetPage (print "/authors/" $authorSlug) }}
+          {{ if $authorPage }}
+          <div class="p-author h-card" style="display:none;">
+            <a class="u-url p-name" href="/authors/{{ $authorSlug }}/">{{ $authorPage.Title }}</a>
+            {{ if $authorPage.Params.photo }}
+            <img class="u-photo" src="{{ $authorPage.Params.photo | relURL }}" alt="{{ $authorPage.Title }}" />
+            {{ end }}
+          </div>
+          {{ end }}
+        {{ end }}
+      {{ end }}
     </div>
   </header>
   {{ if .Params.image }}
@@ -68,7 +90,10 @@
           </button>
           
           <!-- Normal Social Sharing Links -->
-          <a id="js-share-x" href="#" target="_blank" rel="noopener noreferrer" class="button button--secondary share-btn" style="padding: 0.5em 1.2em; font-size: 0.8rem; border-radius: 4px; background: rgba(255,255,255,0.02); border: 1px solid rgba(255,255,255,0.1); color: rgba(255,255,255,0.8); text-decoration: none;" title="Share on X">
+          <a id="js-share-x" href="#" 
+             data-via="{{ if .Params.authors }}{{ $author := index .Params.authors 0 }}{{ $authorSlug := $author | urlize }}{{ $authorPage := $.Site.GetPage (print `/authors/` $authorSlug) }}{{ if $authorPage }}{{ range $authorPage.Params.socials }}{{ if eq .platform `X` }}{{ replace .url `https://x.com/` `` }}{{ end }}{{ end }}{{ end }}{{ end }}"
+             data-tags="{{ range $idx, $tag := .Params.tags }}{{ if $idx }},{{ end }}{{ replace ($tag | urlize) `-` `` }}{{ end }}"
+             target="_blank" rel="noopener noreferrer" class="button button--secondary share-btn" style="padding: 0.5em 1.2em; font-size: 0.8rem; border-radius: 4px; background: rgba(255,255,255,0.02); border: 1px solid rgba(255,255,255,0.1); color: rgba(255,255,255,0.8); text-decoration: none;" title="Share on X">
             <span>X (Twitter)</span>
           </a>
           

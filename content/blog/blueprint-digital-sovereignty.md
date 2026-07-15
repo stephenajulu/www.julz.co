@@ -4,6 +4,7 @@ subtitle: "Why proprietary cloud ecosystems represent a new digital enclosure, a
 date: 2026-07-14T08:00:00+03:00
 excerpt: "We analyze how proprietary software monopolies enclose emerging markets, and map out the architectural blueprint for digital sovereignty using local R&D and open-source infrastructure."
 layout: post
+authors: ["stephen-ajulu"]
 image: "/images/digital_sovereignty_hero.jpg"
 image_alt: "High-tech server node in a lush green African landscape"
 thumb_image: "/images/digital_sovereignty_hero.jpg"

@@ -70,6 +70,8 @@ www.julz.co/
 │   │   ├── list.html             # Fallback category listings
 │   │   ├── post.html             # Journal single pages (Read time, TOC, Related)
 │   │   └── taxonomy.html         # Custom Tag/Category feeds
+│   ├── authors/
+│   │   └── term.html             # Custom Author profile rendering layouts
 │   └── partials/
 │       ├── footer.html           # Universal copyright, links & Newsletter call
 │       ├── header.html           # Navigation bar with slide animations

@@ -4,6 +4,7 @@ subtitle: "Why developers and enterprises are leaving proprietary SaaS, building
 date: 2026-07-14T08:25:00+03:00
 excerpt: "We analyze the growing homelab and cloud-exit trend, referencing DHH's migration at 37Signals, the rise of mini PCs, and the ecosystem of sovereign OS (CasaOS, ZimaOS, UmbrelOS)."
 layout: post
+authors: ["stephen-ajulu"]
 image: "/images/cloud_exit_hero.jpg"
 image_alt: "A server rack being unlocked from a giant golden cage representing cloud exit"
 thumb_image: "/images/cloud_exit_hero.jpg"
