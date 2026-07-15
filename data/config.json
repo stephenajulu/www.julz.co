@@ -11,25 +11,14 @@
         "has_nav": true,
         "nav_links": [
             {
-                "label": "Home",
-                "url": "/",
-                "style": "link"
-            },
-            {
-                "label": "About",
-                "url": "/about/",
-                "style": "link"
-            },
-            {
-                "label": "Insights",
-                "url": "/blog/",
-                "style": "link"
-            },
-            {
                 "label": "Explore",
                 "url": "#",
                 "style": "dropdown",
                 "children": [
+                    {
+                        "label": "Story",
+                        "url": "/about/"
+                    },
                     {
                         "label": "Purpose",
                         "url": "/purpose/"
@@ -45,6 +34,10 @@
                     {
                         "label": "Hold",
                         "url": "/hold/"
+                    },
+                    {
+                        "label": "Insights",
+                        "url": "/blog/"
                     }
                 ]
             },
