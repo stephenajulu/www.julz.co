@@ -57,15 +57,25 @@ sections:
           <li><strong>The Collective:</strong> The alignment hub where builder cohorts and tactical squad networks collaborate on independent, sovereign projects.</li>
         </ul>
 
-        <h2>The Arms of JULZ</h2>
+        <h2>The Operational Pipeline</h2>
         <p>
-          The lifecycle of our builds progresses through four specific arms, aligning values with tangible impact:
+          Our project lifecycle progresses through four distinct operational phases, aligning vision with execution:
         </p>
         <ul>
-          <li><strong>Ethos:</strong> The guiding value system and principles that define why, how, and for whom we build.</li>
-          <li><strong>Join (Collective):</strong> The portal for builders, storytellers, designers, and scientists to contribute their unique skills and coordinate.</li>
-          <li><strong>Forge:</strong> The execution plane where blueprints become functional, local-first code and hardware.</li>
-          <li><strong>Hold:</strong> The stewardship custodian that protects creations from market speculation and secures long-term maintenance.</li>
+          <li><strong>Ethos:</strong> The guiding value system and expandable principles that establish the standards of integrity for every build.</li>
+          <li><strong>Join:</strong> The alignment portal where builders, storytellers, and designers submit their expertise to co-create.</li>
+          <li><strong>Forge:</strong> The R&D laboratory where conceptual designs are fabricated into functional local-first software and physical devices.</li>
+          <li><strong>Hold:</strong> The custody vault that stewards and maintains our assets, securing long-term technical resilience.</li>
+        </ul>
+
+        <h2>The Supporting Arms</h2>
+        <p>
+          The active R&D and execution branches that power the daily creations of the forge:
+        </p>
+        <ul>
+          <li><strong>Aju Studio:</strong> Product design, digital UI/UX, brand identity layouts, and biophilic architectural planning.</li>
+          <li><strong>Fulcrum Media:</strong> Narrative design, documentary writing, photography, video production, and visual storytelling.</li>
+          <li><strong>Ajulu Labs:</strong> Experimental technology development, homelab server testing, and local AI prototyping.</li>
         </ul>
 
         <div style="margin-top: 3.5em; padding-top: 2em; border-top: 1px solid rgba(255, 255, 255, 0.05); text-align: center;">
