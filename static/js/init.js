@@ -198,6 +198,29 @@ window.addEventListener('popstate', function() {
 window.initializeShareButtons = function() {
   const webshareBtn = document.getElementById('js-webshare-btn');
   const copylinkBtn = document.getElementById('js-copylink-btn');
+  const shareX = document.getElementById('js-share-x');
+  const shareFB = document.getElementById('js-share-facebook');
+  const shareLI = document.getElementById('js-share-linkedin');
+  const sharePin = document.getElementById('js-share-pinterest');
+  const shareWA = document.getElementById('js-share-whatsapp');
+  const shareTG = document.getElementById('js-share-telegram');
+  
+  const currentUrl = window.location.href;
+  const currentTitle = document.title;
+  const description = document.querySelector('meta[name="description"]')?.getAttribute('content') || '';
+  const ogImage = document.querySelector('meta[property="og:image"]')?.getAttribute('content') || '';
+  
+  const encodedUrl = encodeURIComponent(currentUrl);
+  const encodedTitle = encodeURIComponent(currentTitle);
+  const encodedDesc = encodeURIComponent(description);
+  const encodedImage = encodeURIComponent(ogImage);
+  
+  if (shareX) shareX.href = `https://twitter.com/intent/tweet?text=${encodedTitle}&url=${encodedUrl}`;
+  if (shareFB) shareFB.href = `https://www.facebook.com/sharer/sharer.php?u=${encodedUrl}`;
+  if (shareLI) shareLI.href = `https://www.linkedin.com/sharing/share-offsite/?url=${encodedUrl}`;
+  if (sharePin) sharePin.href = `https://pinterest.com/pin/create/button/?url=${encodedUrl}&media=${encodedImage}&description=${encodedDesc}`;
+  if (shareWA) shareWA.href = `https://api.whatsapp.com/send?text=${encodedTitle}%20${encodedUrl}`;
+  if (shareTG) shareTG.href = `https://t.me/share/url?url=${encodedUrl}&text=${encodedTitle}`;
   
   if (webshareBtn) {
     if (navigator.share) {
@@ -205,9 +228,9 @@ window.initializeShareButtons = function() {
       // Use clean event handler binding to avoid duplicates
       webshareBtn.onclick = function() {
         navigator.share({
-          title: document.title,
-          text: document.querySelector('meta[name="description"]')?.getAttribute('content') || '',
-          url: window.location.href
+          title: currentTitle,
+          text: description,
+          url: currentUrl
         }).catch(err => console.log('Share failed:', err));
       };
     } else {
@@ -217,7 +240,7 @@ window.initializeShareButtons = function() {
   
   if (copylinkBtn) {
     copylinkBtn.onclick = function() {
-      navigator.clipboard.writeText(window.location.href).then(() => {
+      navigator.clipboard.writeText(currentUrl).then(() => {
         const textSpan = document.getElementById('copylink-btn-text');
         if (textSpan) {
           const originalHTML = textSpan.innerHTML;

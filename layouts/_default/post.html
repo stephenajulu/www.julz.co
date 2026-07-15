@@ -68,27 +68,27 @@
           </button>
           
           <!-- Normal Social Sharing Links -->
-          <a href="https://twitter.com/intent/tweet?text={{ urlquery .Title }}&url={{ .Permalink }}" target="_blank" rel="noopener noreferrer" class="button button--secondary share-btn" style="padding: 0.5em 1.2em; font-size: 0.8rem; border-radius: 4px; background: rgba(255,255,255,0.02); border: 1px solid rgba(255,255,255,0.1); color: rgba(255,255,255,0.8); text-decoration: none;" title="Share on X">
+          <a id="js-share-x" href="#" target="_blank" rel="noopener noreferrer" class="button button--secondary share-btn" style="padding: 0.5em 1.2em; font-size: 0.8rem; border-radius: 4px; background: rgba(255,255,255,0.02); border: 1px solid rgba(255,255,255,0.1); color: rgba(255,255,255,0.8); text-decoration: none;" title="Share on X">
             <span>X (Twitter)</span>
           </a>
           
-          <a href="https://www.facebook.com/sharer/sharer.php?u={{ .Permalink }}" target="_blank" rel="noopener noreferrer" class="button button--secondary share-btn" style="padding: 0.5em 1.2em; font-size: 0.8rem; border-radius: 4px; background: rgba(255,255,255,0.02); border: 1px solid rgba(255,255,255,0.1); color: rgba(255,255,255,0.8); text-decoration: none;" title="Share on Facebook">
+          <a id="js-share-facebook" href="#" target="_blank" rel="noopener noreferrer" class="button button--secondary share-btn" style="padding: 0.5em 1.2em; font-size: 0.8rem; border-radius: 4px; background: rgba(255,255,255,0.02); border: 1px solid rgba(255,255,255,0.1); color: rgba(255,255,255,0.8); text-decoration: none;" title="Share on Facebook">
             <span>Facebook</span>
           </a>
           
-          <a href="https://www.linkedin.com/sharing/share-offsite/?url={{ .Permalink }}" target="_blank" rel="noopener noreferrer" class="button button--secondary share-btn" style="padding: 0.5em 1.2em; font-size: 0.8rem; border-radius: 4px; background: rgba(255,255,255,0.02); border: 1px solid rgba(255,255,255,0.1); color: rgba(255,255,255,0.8); text-decoration: none;" title="Share on LinkedIn">
+          <a id="js-share-linkedin" href="#" target="_blank" rel="noopener noreferrer" class="button button--secondary share-btn" style="padding: 0.5em 1.2em; font-size: 0.8rem; border-radius: 4px; background: rgba(255,255,255,0.02); border: 1px solid rgba(255,255,255,0.1); color: rgba(255,255,255,0.8); text-decoration: none;" title="Share on LinkedIn">
             <span>LinkedIn</span>
           </a>
 
-          <a href="https://pinterest.com/pin/create/button/?url={{ .Permalink }}&media={{ if .Params.image }}{{ .Params.image | absURL }}{{ else }}{{ "/images/logo.png" | absURL }}{{ end }}&description={{ urlquery (.Params.excerpt | default .Summary) }}" target="_blank" rel="noopener noreferrer" class="button button--secondary share-btn" style="padding: 0.5em 1.2em; font-size: 0.8rem; border-radius: 4px; background: rgba(255,255,255,0.02); border: 1px solid rgba(255,255,255,0.1); color: rgba(255,255,255,0.8); text-decoration: none;" title="Share on Pinterest">
+          <a id="js-share-pinterest" href="#" target="_blank" rel="noopener noreferrer" class="button button--secondary share-btn" style="padding: 0.5em 1.2em; font-size: 0.8rem; border-radius: 4px; background: rgba(255,255,255,0.02); border: 1px solid rgba(255,255,255,0.1); color: rgba(255,255,255,0.8); text-decoration: none;" title="Share on Pinterest">
             <span>Pinterest</span>
           </a>
           
-          <a href="https://api.whatsapp.com/send?text={{ urlquery (print .Title " " .Permalink) }}" target="_blank" rel="noopener noreferrer" class="button button--secondary share-btn" style="padding: 0.5em 1.2em; font-size: 0.8rem; border-radius: 4px; background: rgba(255,255,255,0.02); border: 1px solid rgba(255,255,255,0.1); color: rgba(255,255,255,0.8); text-decoration: none;" title="Share on WhatsApp">
+          <a id="js-share-whatsapp" href="#" target="_blank" rel="noopener noreferrer" class="button button--secondary share-btn" style="padding: 0.5em 1.2em; font-size: 0.8rem; border-radius: 4px; background: rgba(255,255,255,0.02); border: 1px solid rgba(255,255,255,0.1); color: rgba(255,255,255,0.8); text-decoration: none;" title="Share on WhatsApp">
             <span>WhatsApp</span>
           </a>
           
-          <a href="https://t.me/share/url?url={{ .Permalink }}&text={{ urlquery .Title }}" target="_blank" rel="noopener noreferrer" class="button button--secondary share-btn" style="padding: 0.5em 1.2em; font-size: 0.8rem; border-radius: 4px; background: rgba(255,255,255,0.02); border: 1px solid rgba(255,255,255,0.1); color: rgba(255,255,255,0.8); text-decoration: none;" title="Share on Telegram">
+          <a id="js-share-telegram" href="#" target="_blank" rel="noopener noreferrer" class="button button--secondary share-btn" style="padding: 0.5em 1.2em; font-size: 0.8rem; border-radius: 4px; background: rgba(255,255,255,0.02); border: 1px solid rgba(255,255,255,0.1); color: rgba(255,255,255,0.8); text-decoration: none;" title="Share on Telegram">
             <span>Telegram</span>
           </a>
           
