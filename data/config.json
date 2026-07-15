@@ -38,13 +38,12 @@
                     {
                         "label": "Insights",
                         "url": "/blog/"
+                    },
+                    {
+                        "label": "Contact",
+                        "url": "/contact/"
                     }
                 ]
-            },
-            {
-                "label": "Contact",
-                "url": "/contact/",
-                "style": "link"
             }
         ]
     },
