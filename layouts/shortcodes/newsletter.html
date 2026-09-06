@@ -1,0 +1,22 @@
+<div class="newsletter-signup fadeInUp" style="margin: 2.5em auto; max-width: 640px;">
+  <h3 class="newsletter-signup__title">{{ .Get "title" | default "Subscribe to the Sovereign Feed" }}</h3>
+  <p class="newsletter-signup__subtitle">{{ .Get "subtitle" | default "Get tactical intelligence, solarpunk blueprints, and digital sovereignty briefs directly to your inbox." }}</p>
+  <form class="newsletter-form" name="newsletter" method="POST" data-netlify="true" data-netlify-honeypot="bot-field">
+    <div class="screen-reader-text" style="display:none;">
+      <label>Don't fill this out if you're human: <input name="bot-field" /></label>
+    </div>
+    <input type="hidden" name="form-name" value="newsletter" />
+    <div class="newsletter-form__group">
+      <input type="email" name="email" class="newsletter-form__input" placeholder="{{ .Get "placeholder" | default "Enter your email address..." }}" required aria-label="Email Address" />
+      <button type="submit" class="newsletter-form__button" aria-label="Subscribe">
+        <span>{{ .Get "button_label" | default "Subscribe" }}</span>
+        <span class="icon-arrow-right" aria-hidden="true">→</span>
+      </button>
+    </div>
+  </form>
+  {{ with .Get "note" }}
+  <p class="newsletter-signup__note" style="font-size: 0.8rem; color: rgba(255, 255, 255, 0.45); margin-top: 1.25em; line-height: 1.4;">
+    {{ . | safeHTML }}
+  </p>
+  {{ end }}
+</div>

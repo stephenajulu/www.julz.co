@@ -40,6 +40,10 @@
                         "url": "/blog/"
                     },
                     {
+                        "label": "Newsletter",
+                        "url": "/newsletter/"
+                    },
+                    {
                         "label": "Contact",
                         "url": "/contact/"
                     }

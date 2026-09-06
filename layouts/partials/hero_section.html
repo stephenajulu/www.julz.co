@@ -15,8 +15,5 @@
       {{ partial "cta_buttons.html" $include_dict }}
     </div>
     {{ end }}
-    {{ if and (in $section.class "hero-full-center") .page.IsHome }}
-      {{ partial "minimal_subscription_form.html" . }}
-    {{ end }}
   </div>
 </section>

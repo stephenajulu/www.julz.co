@@ -215,6 +215,43 @@ collections:
                       - {label: "URL", name: "url", widget: "string"}
                       - {label: "Style", name: "style", widget: "select", options: ["button", "link"]}
 
+      - file: "content/newsletter.md"
+        label: "Newsletter Page"
+        name: "newsletter"
+        fields:
+          - {label: "Title", name: "title", widget: "string"}
+          - {label: "Subtitle", name: "subtitle", widget: "string"}
+          - {label: "Layout", name: "layout", widget: "hidden", default: "advanced"}
+          - {label: "Hide Title Header", name: "hide_title", widget: "boolean", default: true}
+          - {label: "Hide Footer Newsletter", name: "hide_newsletter", widget: "boolean", default: true}
+          - label: "Sections"
+            name: "sections"
+            widget: "list"
+            types:
+              - label: "Hero Section"
+                name: "hero_section"
+                widget: "object"
+                fields:
+                  - {label: "Section ID", name: "section_id", widget: "string"}
+                  - {label: "Title", name: "title", widget: "string"}
+                  - {label: "Content", name: "content", widget: "markdown"}
+              - label: "Newsletter Section"
+                name: "newsletter_section"
+                widget: "object"
+                fields:
+                  - {label: "Section ID", name: "section_id", widget: "string"}
+                  - {label: "Tagline", name: "tagline", widget: "string"}
+                  - {label: "Title", name: "title", widget: "string"}
+                  - {label: "Subtitle", name: "subtitle", widget: "string"}
+                  - {label: "Placeholder", name: "placeholder", widget: "string"}
+                  - {label: "Button Label", name: "button_label", widget: "string"}
+                  - {label: "Note", name: "note", widget: "string"}
+              - label: "Content Section"
+                name: "content_section"
+                widget: "object"
+                fields:
+                  - {label: "Content (Markdown)", name: "content", widget: "markdown"}
+
   - name: "blog"
     label: "Journal / Insights"
     folder: "content/blog"
